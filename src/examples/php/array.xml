@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE report >
+<Report fontSize="20" orientation="landscape">
+	<Alternate>
+		<NoData>
+			<Output>
+				<Line fontSize="12">
+					<literal>NO DATA</literal>
+				</Line>		
+			</Output>
+		</NoData>
+	</Alternate>
+		
+
+	<Detail>
+
+		<FieldDetails>
+			<Output>
+				<Line bgcolor="iif(r.detailcnt%2,'0xe5e5e5','white')">
+				<field value="iif('oscar' == 'meyer', 1)" width="6" align="right" col="3"/>
+
+				</Line>
+			</Output>
+		</FieldDetails>
+	</Detail>
+	<PageFooter>
+		<Output>
+			<Line>
+				<literal>Page: </literal>	
+				<field value="r.pageno" width="3" align="right"/>
+			</Line>
+		</Output>
+	</PageFooter>
+
+	<ReportFooter>
+	</ReportFooter>
+</Report>

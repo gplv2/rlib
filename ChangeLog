@@ -1,0 +1,3612 @@
+2006-08-10  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: Release Time
+	* bindings/php/php.c: OSX Build/Link Fixes
+	* libsrc/formatstring.c: Fix crash
+	* libsrc/value.c:
+	* rpdf/rpdf.c: 
+	* src/examples/c/Makefile.am:
+
+2006-08-01  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: Don't crash on NULL memo fields
+
+2006-07-12  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/parsexml.c: pass unevaulated query from parse_part_load
+
+2006-06-20  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/layout.c: Fix crash with NULL data
+	* libsrc/pcode_op_functions.c: likewise
+	* src/examples/php/expressions.xml: nada
+
+2006-06-06  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/environment.c: write in chunks
+	* libsrc/breaks.c:  break layout bug
+	* libsrc/layout.c: Memo Layout fixes
+	* libsrc/pcode_op_functions.c: Don't Crash on incomplete iifs
+	* src/examples/php/array.xml:
+
+2006-06-06  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: Add Bit Compare PCODE "&"
+	* libsrc/pcode.h: 
+	* libsrc/pcode_op_functions.c: 
+	* src/examples/php/array.php:
+	* src/examples/php/array.xml:
+
+2006-05-20  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: PNG image support and the part load tag is now a PCODE
+	* libsrc/parsexml.c: 
+	* libsrc/pcode.c: 
+	* libsrc/pdf.c: 
+	* libsrc/reportgen.c: 
+	* rpdf/rpdf.c: 
+	* rpdf/rpdf.h:
+	* rpdf/test.c: 
+	* src/examples/php/flow_part.xml:
+
+2006-05-18  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/layout.c: Don't crash on null dates
+	* libsrc/pcode_op_functions.c: likewise
+
+2006-03-22  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* configure.in: RPDF Compression
+	* libsrc/pdf.c: 
+	* rpdf/rpdf.c: 
+	* rpdf/rpdf.h:
+
+2006-03-22  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* inputs/odbc/Makefile.am: Fix linking
+
+2006-03-17  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/html.c: More XHTML Output goodies
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+
+2006-03-16  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: Fix RLIB expression compiler error
+	* src/examples/php/expressions.xml: test case
+
+2006-03-15  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/html.c: Valid XHTML Output
+	* libsrc/reportgen.c: 
+	* src/examples/php/array.php:
+	* src/examples/php/graph.php:
+	* src/examples/php/multiline.php:
+
+2006-02-15  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* libsrc/formatstring.c: Use correct string size when working the strings (utf8 fix...)
+
+2006-02-15  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: Use glib iconv
+	* libsrc/parsexml.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/breaks.c: if problem where break footer would not come out if it would not fit on a page and breaks are not foreced
+	* libsrc/formatstring.c: Fix formatting if negative devimal numbers
+	* src/examples/php/array.php: testing
+	* src/examples/php/array.xml: likewise
+
+2006-02-04  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: "Ignore" keyword for variables
+	* libsrc/parsexml.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/variables.c: likewise
+	* src/examples/php/csv.xml: likewise
+
+2006-01-11  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: Use gstrings to get speed increase
+	* libsrc/pcode.c: Improve speed a tad
+
+2006-01-10  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: Speed things up by using gstrings, hash the function table, don't do silly thinks like keep looking up the existing locale
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+	* libsrc/value.c: likewise
+	* rpdf/rpdf.c: likewise
+	* rpdf/rpdf.h: likewise
+
+2006-01-08  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: New year, new copyright
+	* bindings/Makefile.am:
+	* bindings/csharp/Makefile.am:
+	* bindings/interfaces/Makefile.am:
+	* bindings/java/Makefile.am:
+	* bindings/perl/Makefile.am:
+	* bindings/python/Makefile.am:
+	* configure.in:
+	* doc/Makefile.am:
+	* inputs/Makefile.am:
+	* inputs/mysql/Makefile.am:
+	* inputs/mysql/mysql.c:
+	* inputs/odbc/Makefile.am:
+	* inputs/postgres/Makefile.am:
+	* inputs/postgres/postgres.c:
+	* libsrc/Makefile.am:
+	* libsrc/api.c:
+	* libsrc/axis.c:
+	* libsrc/breaks.c:
+	* libsrc/charencoder.c:
+	* libsrc/charencoder.h:
+	* libsrc/csv.c:
+	* libsrc/datasource.c:
+	* libsrc/datetime.c:
+	* libsrc/datetime.h:
+	* libsrc/environment.c:
+	* libsrc/formatstring.c:
+	* libsrc/free.c:
+	* libsrc/fxp.c:
+	* libsrc/gd.c:
+	* libsrc/graphing.c:
+	* libsrc/html.c:
+	* libsrc/layout.c:
+	* libsrc/load.c:
+	* libsrc/navigation.c:
+	* libsrc/parsexml.c:
+	* libsrc/pcode.c:
+	* libsrc/pcode.h:
+	* libsrc/pcode_op_functions.c:
+	* libsrc/pdf.c:
+	* libsrc/ralloc.c:
+	* libsrc/ralloc.h:
+	* libsrc/reportgen.c:
+	* libsrc/resolution.c:
+	* libsrc/rlib.h:
+	* libsrc/rlib_gd.h:
+	* libsrc/rlib_input.h:
+	* libsrc/save.c:
+	* libsrc/txt.c:
+	* libsrc/util.c:
+	* libsrc/util.h:
+	* libsrc/value.c:
+	* libsrc/value.h:
+	* libsrc/variables.c:
+	* libsrc/xml_data_source.c:
+	* rpdf/Makefile.am:
+	* rpdf/rpdf.c:
+	* rpdf/rpdf.h:
+	* rpdf/test.c:
+	* src/Makefile.am:
+	* src/examples/Makefile.am:
+	* src/examples/c/Makefile.am:
+	* src/examples/c/example.c:
+	* src/examples/common/Makefile.am:
+	* src/examples/csharp/Makefile.am:
+	* src/examples/java/Makefile.am:
+	* src/examples/perl/Makefile.am:
+	* src/examples/php/Makefile.am:
+	* src/examples/python/Makefile.am:
+	* src/rlibc.c:
+	* tests/Makefile.am:
+	* tests/test1.c:
+	* tests/test2.c:
+	* tests/test3.c:
+
+2006-01-08  Bob Doan  <bdoan@sicompos.com>
+	* bindings/csharp/csharp.c: CSV data source
+	* bindings/interfaces/rlib.cs: likewise
+	* bindings/interfaces/rlib.java:  likewise
+	* bindings/interfaces/rlib.pm: likewise
+	* bindings/interfaces/rlib.py: likewise
+	* bindings/interfaces/rlibJNI.java:  likewise
+	* bindings/interfaces/rlibPINVOKE.cs: likewise
+	* bindings/interfaces/rlibcompat.py: likewise
+	* bindings/java/java.c: likewise
+	* bindings/perl/perl.c: likewise
+	* bindings/php/Makefile.am: likewise
+	* bindings/php/array_data_source.c: likewise
+	* bindings/php/environment.c: likewise
+	* bindings/php/php.c:  likewise
+	* bindings/php/rlib_php.h: likewise
+	* bindings/python/python.c: likewise
+	* bindings/python/rlibmodule.c:  likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/csv_data_source.c:  likewise
+	* libsrc/datasource.c:  likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* src/examples/php/Makefile.am: likewise
+	* src/examples/php/csv.php: likewise
+	* src/examples/php/csv.xml: likewise
+	* src/examples/php/data.csv: likewise
+
+2006-01-07  Bob Doan  <bdoan@sicompos.com>
+	* inputs/odbc/odbc.c: Support cursors w/ forward only navigation
+
+2006-01-06  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* configure.in: Don't link main rlib w/ plugin libraries.
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/postgres/Makefile.am: likewise
+
+2006-01-05  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: do_break output parameter
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+
+2006-01-01  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: Make sure Python.h is there even if autoconf stuff finds some Python stuff
+
+2006-01-01  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* rlib.spec.in: Make newer RPM's happier
+
+2005-12-31  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* libsrc/charencoder.c: Don't memset() a NULL pointer.  g_iconv() doesn't allocate the output buffer, use g_convert_with_iconv() instead.
+	* libsrc/formatstring.c: Don't truncate UTF-8 strings.
+	* libsrc/layout.c: On 64-bit systems, gsize isn't the same size as guint. So, don't pass
+		an address of a smaller sized variable to a function that expects
+		a larger storage, it will corrupt the stack and cause crashes elsewhere.
+
+		Resize the allocated buffer if needed to avoid crashes.
+	* libsrc/resolution.c: Always return an allocated string
+
+2005-12-31  Bob Doan  <bdoan@sicompos.com>
+	* src/examples/php/array.xml: Somehow it had cvs stuff in the XML
+
+2005-12-19  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* rlib.spec.in: Spec Update
+
+2005-12-19  Bob Doan  <bdoan@sicompos.com>
+	* inputs/odbc/odbc.c: More error messages
+	* libsrc/parsexml.c: Part only paper type support
+	* libsrc/reportgen.c: likewise
+	* rpdf/test.c: nada
+
+2005-12-01  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: 1.3.7
+	* libsrc/pcode_op_functions.c: DO fxpdiv for fxpval for more accurate numbers
+	* src/examples/php/expressions.xml: test case
+
+2005-12-01  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: Release Time
+
+2005-12-01  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: Don't crash on Empty Data Source
+	* libsrc/api.c: Turn on HTML Error reporting faster
+	* libsrc/reportgen.c: likewise
+
+2005-11-23  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: Play nice if array datasource is invalid
+	* libsrc/reportgen.c:  likewise
+	* src/examples/php/array.xml: ditto
+
+2005-11-17  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: fix crashers
+	* libsrc/breaks.c: fix crashers
+	* libsrc/csv.c: fix crashers
+	* libsrc/html.c: fix crashers
+	* libsrc/reportgen.c: fix crashers
+	* libsrc/txt.c: fix crashers
+	* libsrc/util.c: fix crashers
+
+2005-11-07  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: restore non format string chars in format string functionality.
+	* libsrc/layout.c: don't check stack size on iif's
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c:  likewise
+	* libsrc/resolution.c:  likewise
+	* libsrc/xml_data_source.c:  likewise
+	* src/examples/php/array.php: likewise
+	* src/examples/php/expressions.php: likewise
+	* src/examples/php/expressions.xml: likewise
+
+2005-11-06  Bob Doan  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: Make GLIB Quitier
+	* libsrc/parsexml.c: remove #if 0
+
+2005-10-27  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/layout.c: Set the font size on all pages_across so that RPDF is a happy camper
+	* rpdf/rpdf.c: likewise
+	* src/examples/php/pages_across.php: likewise
+
+2005-10-25  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: Metadata support & Fix Suppress Page Header 1st Page
+	* libsrc/free.c: likewise
+	* libsrc/graphing.c:  likewise
+	* libsrc/layout.c:  likewise
+	* libsrc/navigation.c:  likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/variables.c:  likewise
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/multiline.xml:likewise
+
+2005-10-21  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: Multiline support in the page header
+	* libsrc/formatstring.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+	* rpdf/rpdf.c: likewise
+	* src/examples/php/multiline.php: likewise
+	* src/examples/php/multiline.xml: likewise
+
+2005-10-17  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: Multiline / RPDF Speed Up
+	* libsrc/layout.c:  likewise
+	* libsrc/reportgen.c: likewise
+	* rpdf/rpdf.c: likewise
+	* rpdf/rpdf.h: likewise
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/multiline.php: likewise
+	* src/examples/php/multiline.xml: likewise
+
+2005-10-16  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: Start working our way twords multiline rows (memo fields)
+	* libsrc/charencoder.c: likewise
+	* libsrc/datetime.c: likewise
+	* libsrc/datetime.h:likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c:likewise
+	* libsrc/pcode.h:likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c:likewise
+	* libsrc/resolution.c:likewise
+	* libsrc/rlib.h:likewise
+	* libsrc/txt.c:likewise
+	* src/examples/php/Makefile.am:likewise
+	* src/examples/php/array.xml:likewise
+	* src/examples/php/multiline.php:likewise
+	* src/examples/php/multiline.xml:likewise
+
+2005-10-13  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: Don't layout when precalculating
+
+2005-10-13  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: 1.3.6
+	* libsrc/Makefile.am: Pre Calculated Variables
+	* libsrc/breaks.c:  likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/variables.c: likewise
+	* src/examples/php/array.php: likewise
+	* src/examples/php/array.xml: likewise
+
+2005-10-07  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: Release Time
+	* configure.in: likewise
+
+2005-10-05  Bob Doan  <bdoan@sicompos.com>
+	* inputs/postgres/postgres.c: Fix Previous
+	* libsrc/pcode.c: Detect () Mismatch, Don't continue executing if problems executing
+	* libsrc/pcode_op_functions.c: likewise
+	* src/examples/php/expressions.xml: test...
+
+2005-08-31  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/axis.c: Don't allow really big numbers in the left_pad
+	* libsrc/formatstring.c:  likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/expressions.xml: ...
+
+2005-08-16  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: Don' go passed the end by accident while graphing
+	* libsrc/csv.c: escape quotes
+	* libsrc/resolution.c: don't strlen null
+	* src/examples/php/array.php: testing
+
+2005-08-12  Bob Doan  <bdoan@sicompos.com>
+	* bindings/python/rlibmodule.c: Fix some gcc warnings/ compile problems on RH 9
+
+2005-08-11  Bob Doan  <bdoan@sicompos.com>
+	* bindings/python/rlibmodule.c: Fix function params
+	* libsrc/formatstring.c: Fix bug assuming locale was thread safe
+	* libsrc/pcode.c: throw error if there is more then 1 element left on the stack after execution
+
+2005-08-10  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/csv.c: don't crash on CSV output w/ graphs
+	* libsrc/html.c: don't crash on CSV output w/ graphs
+	* libsrc/layout.c: fix csv output problem w/ pages across
+	* libsrc/pcode.c:  better error messages
+	* libsrc/pdf.c: don't crash on CSV output w/ graphs
+	* libsrc/reportgen.c: expressions are now truely in the global scope
+	* libsrc/resolution.c: expressions are now truely in the global scope 
+	* libsrc/rlib.h: expressions are now truely in the global scope
+	* libsrc/txt.c: don't crash on CSV output w/ graphs
+	* libsrc/util.c: make sure the r pointer is not null to prevent crash
+	* src/examples/php/array.php: examples
+	* src/examples/php/array.xml: likewise
+
+2005-08-09  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/reportgen.c: check for "yes"
+	* libsrc/util.c: log out the environment so that binding languages can pick up the messages
+
+2005-08-08  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: error messages with line numbers and the ability to dump error messages in html
+	* bindings/python/rlibmodule.c: likewise
+	* libsrc/api.c:  likewise
+	* libsrc/breaks.c:  likewise
+	* libsrc/datasource.c:  likewise
+	* libsrc/datetime.c:  likewise
+	* libsrc/formatstring.c:  likewise
+	* libsrc/free.c:  likewise
+	* libsrc/gd.c:  likewise
+	* libsrc/html.c:  likewise
+	* libsrc/layout.c:  likewise
+	* libsrc/load.c:  likewise
+	* libsrc/parsexml.c:  likewise
+	* libsrc/pcode.c:  likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c:  likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_gd.h: likewise
+	* libsrc/save.c:  likewise
+	* libsrc/util.c:  likewise
+	* libsrc/util.h: likewise
+	* libsrc/xml_data_source.c:  likewise
+	* src/examples/php/array.php: likewise
+	* src/examples/php/array.xml: likewise
+
+2005-08-03  William Volkman  <wkvsf@users.sourceforge.net>
+	* bindings/interfaces/Makefile.am: Fully featured Python Bindings
+	* bindings/interfaces/rlibcompat.py: likewise
+	* bindings/python/Makefile.am: likewise
+	* bindings/python/rlibmodule.c:  likewise
+	* libsrc/free.c: likewise
+	* src/examples/python/Makefile.am: likewise
+	* src/examples/python/arrays_signals_and_functions.py: likewise
+	* src/examples/python/compat-example.py: likewise
+	* src/examples/python/example.py: likewise
+	* src/examples/python/fixed_part.py: likewise
+	* src/examples/python/follower.py: likewise
+	* src/examples/python/graph.py: likewise
+	* src/examples/python/xml.py: likewise
+
+2005-08-01  William Volkman  <wkvsf@users.sourceforge.net>
+	* src/examples/php/graph.php: Fix up example
+	* src/examples/php/graph.xml: likewise
+
+2005-08-01  William Volkman  <wkvsf@users.sourceforge.net>
+	* bindings/python/python.c: Fix binding error from SWIG generation
+
+2005-08-01  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: version
+	* libsrc/api.c: fix locale
+	* libsrc/breaks.c: fix break problem
+	* libsrc/formatstring.c: fix formatting problem (locale stuff)
+	* libsrc/parsexml.c: make gcc happier
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/rlib.h: fix locale stuff
+	* src/examples/php/expressions.php: ..
+	* src/examples/php/expressions.xml:  ..
+	
+2005-07-31  Bob Doan  <bdoan@sicompos.com>
+	* AUTHORS: add William
+	* NEWS: Fix spelling of postgres
+	* bindings/csharp/csharp.c: likewise
+	* bindings/interfaces/rlib.cs: likewise
+	* bindings/interfaces/rlib.java: likewise
+	* bindings/interfaces/rlib.pm: likewise
+	* bindings/interfaces/rlib.py: likewise
+	* bindings/interfaces/rlibJNI.java: likewise
+	* bindings/interfaces/rlibPINVOKE.cs: likewise
+	* bindings/java/java.c: likewise
+	* bindings/perl/perl.c: likewise
+	* bindings/php/php.c:  likewise
+	* bindings/python/python.c: likewise
+	* configure.in: likewise
+	* inputs/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* inputs/postgre/postgre.c: likewise
+	* inputs/postgres/Makefile.am: likewise
+	* inputs/postgres/postgres.c: likewise
+	* libsrc/api.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* tests/Makefile.am: likewise
+	* tests/test2.c: likewise
+
+2005-07-26  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: Make sure break header comes out on a page even if there are no more data rows and only the footer wants to come out
+	* libsrc/pcode.c:  Tweek complier to fix Mike's expression problem
+	* libsrc/resolution.c: likewise
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/expressions.xml: likewise
+
+2005-07-25  Mike Roth  <mroth@sicompos.com>
+
+	* src/examples/php/expressions.xml: Add parenthesis tests
+
+2005-07-20  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: Fix bug where sometimes the page footer would get overridden with detail lines
+	* libsrc/layout.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/array.xml: likewise
+
+2005-07-19  William Volkman  <wkvsf@users.sourceforge.net>
+	* libsrc/Makefile.am: Modify rlibinclude_HEADERS to add pcode.h to
+	the installed headers list.
+
+2005-07-19  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode_op_functions.c: Don't crash on NULL values in equal
+
+2005-07-19  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: Don't crash if XML could not load
+
+2005-07-19  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: 1.3.5
+	* libsrc/pcode.c: Tweek the compiler again / Make variables less picky and not crash on error
+	* libsrc/free.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c:  likewise
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/expressions.xml: likewise
+	* src/examples/php/fixed_part.php: likewise
+	* libsrc/html.c:  Don't paginate ever
+
+2005-07-19  Mike Roth  <mroth@sicompos.com>
+
+	* src/examples/php/expressions.xml: Add Test Case
+
+2005-07-14  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: RELEASE TIME
+
+2005-07-13  Everton Luis Berz <everton@faccat.br>
+	* libsrc/html.c: Respect width and height properties
+
+2005-07-13  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: Evaulations have less presedence then +-*/^
+	* src/examples/php/array.xml: nada
+
+2005-07-13  Mike Roth  <mroth@sicompos.com>
+	* bindings/php/environment.c: (rlib_php_resolve_memory_variable),
+	(rlib_php_new_environment): Nothing
+	* src/examples/php/expressions.xml: Add test expression for iif .2*10 -vs- (.2*10)
+
+2005-07-12  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: Fix bugs in Expressions
+	* libsrc/resolution.c: likewise
+	* src/examples/php/Makefile.am: some tests
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/expressions.php: likewise
+	* src/examples/php/expressions.xml: likewise
+
+2005-07-08  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.h: Tell the compiler the number is a LL so things like r.detailcnt work past 255
+
+2005-07-06  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* inputs/odbc/odbc.c: Don't rely on SqlRowCount as it's not always populated by DB engines
+
+2005-07-06  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: Fix formatting error when the format string has a leading zero
+	* src/examples/php/array.xml: example
+
+2005-07-05  William K. Volkman <wkvsf@users.sourceforge.net>
+	* bindings/python/python.c: Fix SWIG generated bindings for get output
+
+2005-07-05  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* libsrc/layout.c: Fix missing initializer warnings
+	* rpdf/rpdf.c: likewise
+
+2005-07-05  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* inputs/mysql/mysql.c: Use c style comments
+	* libsrc/api.c: likewise
+	* libsrc/breaks.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/datetime.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h:likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h:likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h:likewise
+	* libsrc/value.c: likewise
+	* libsrc/value.h:likewise
+	* rpdf/rpdf.c: likewise
+	* rpdf/test.c: likewise
+
+2005-07-05  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* libsrc/datasource.c: Better way of silencing datasource plugin pointers
+
+2005-07-05  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/datetime.c: Don't crash if we get an invalid glib date.
+	* libsrc/resolution.c: Don't crash on strcmp of NULL query names
+
+>>>>>>> 1.267
+2005-07-01  Bob Doan  <bdoan@sicompos.com>
+	* inputs/mysql/mysql.c: Don't unload MySQL For now because we could be looping in RLIB
+	* libsrc/free.c: nada
+	* libsrc/layout.c: use strcat not a sprintf w/ %s%s
+	* libsrc/resolution.c: make length on HR's dynamic
+	* rpdf/rpdf.c: don't double free a gslist
+
+2005-06-27  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/resolution.c: Made length of horizontalline dynamic
+
+2005-06-27  William K. Volkman <wkvsf@users.sourceforge.net>
+	* libsrc/api.c: Don't crash if execute failed
+	* libsrc/layout.c: get correct size of HR
+	* libsrc/resolution.c: likewise
+
+2005-06-27  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* libsrc/formatstring.c: Allocate strings dynamically in rlib_number_sprintf() and
+		rlib_pcode_operator_str(). Also rlib_number_sprintf() so
+		it interprets decimal numbers in the correct direction.
+		Previously when it got a number format "%18.27", it interpreted
+		it as "%81.72", immediately destroying stack content, as the
+		space for the to-be-converted strings were too small and
+		allocated on the stack.
+		Fix one ((long long *)&variable) issue in the unused
+		RLIB_VALUE_GET_AS_NUMBERNP macro, too. It could cause massive
+		data corruption on 64-bit systems if used.
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/util.c: likewise
+- (gint64 tentothe(gint n) does not check whether the index into the
+   local array is a correct index. Fix it by using pow(N, M).
+   Two advantages: no more bad stack access and it gives correct answer
+   for n=0...18, comparing with the previous n=0...11.
+
+- gchar hextochar(gchar c) assigned an integer (32-bit) value
+   internally   to its character parameter, possibly overwriting
+   something on the stack.
+
+2005-06-27  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+
+	reviewed by: Bob Doan
+
+	* bindings/php/php.c: 
+Fix the following types of GCC 4.0 warnings:
+- warning: function declaration isn't a prototype
+   This is an actual syntax error but the compiler just warns about it.
+- warning: ISO C90 forbids mixed declarations and code
+   Similar constructs aren't really accepted by older compilers:
+     int some_variable;
+     some_variable = 0;
+     int some_other_variable;
+- warning: ISO C forbids conversion of function pointer to object 
+pointer type
+   warning: ISO C forbids initialization between function pointer and 
+'void *'
+   warning: ISO C forbids assignment between function pointer and 'void *'
+   Same topic, assignment and conversion between function pointers
+   and object pointers aren't accepted.
+- warning: declaration of 'var/func' shadows a previous local
+   warning: declaration of 'var/func' shadows a global declaration
+   Shadowing parameters, global variables and previously declared local
+   variables can be actual coding bugs.
+- warning: ISO C does not allow extra ';' outside of a function
+   This is a badly defined function:
+     int function(void) {
+       ...
+     };
+- warning: empty body in an if-statement
+   Bad coding, weak attempt at winning an award on the annual
+   Obfuscated C Code Contest:
+     if (expression);
+       do_something();
+
+- warning: passing argument N of 'func' discards qualifiers from pointer
+target type
+- warning: initialization discards qualifiers from pointer target type
+
+and every fallout that would cause incompatible pointers in assignment
+warnings after fixing them.
+
+Reasoning: many functions that accept a "gchar *" parameter don't write
+back to the string so they can be marked "const gchar *".
+Indeed, most calls to them are done with constant strings.
+
+There are some places in RLIB where "long long" variables are used.
+Problem is, "long" and "long long" are not the same size across
+architectures. "long" is the native word size of the CPU, i.e.
+32 bit on 32-bit architectures, 64 bit on 64-bit architectures.
+Size of "long long" is double the native word size. Intention in RLIB
+was to use a 64-bit variable. Fix all those by using the abstract type
+"gint64".
+	* inputs/mysql/mysql.c: likewise
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/postgre.c:  likewise
+	* libsrc/api.c:  likewise
+	* libsrc/axis.c:  likewise
+	* libsrc/csv.c:  likewise
+	* libsrc/datasource.c:  likewise
+	* libsrc/fxp.c: likewise
+	* libsrc/gd.c:  likewise
+	* libsrc/graphing.c:  likewise
+	* libsrc/html.c:  likewise
+	* libsrc/layout.c:  likewise
+	* libsrc/parsexml.c:  likewise
+	* libsrc/pcode.c:  likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c:  likewise
+	* libsrc/pdf.c:  likewise
+	* libsrc/reportgen.c:  likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_gd.h: likewise
+	* libsrc/rlib_langinfo.c: likewise
+	* libsrc/save.c:  likewise
+	* libsrc/txt.c:  likewise
+	* libsrc/util.c:  likewise
+	* libsrc/util.h: likewise
+	* libsrc/value.c:  likewise
+	* libsrc/xml_data_source.c:  likewise
+	* rpdf/rpdf.c:  likewise
+	* rpdf/rpdf.h: likewise
+	* src/examples/c/example.c:  likewise
+
+2005-06-13  William K. Volkman <wkvsf@users.sourceforge.net>
+	* rpdf/rpdf.c: Correct references in image output.
+	* libsrc/environment.c: Enable access to environment variables.
+	* libsrc/api.c: Fix oversight in get_output if we failed to execute.
+
+2005-06-06  William K. Volkman <wkvsf@users.sourceforge.net>
+	* inputs/postgre/postgre.c: Behave properly on a failed query
+
+2005-06-10  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: Bring SWIG along for the ride
+
+2005-06-06  William K. Volkman <wkvsf@users.sourceforge.net>
+
+	reviewed by: Bob Doan  <bdoan@sicompos.com>
+
+	* libsrc/breaks.c: fix memory leaks
+	* libsrc/datasource.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/navigation.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* rpdf/rpdf.c: likewise
+
+2005-05-15  Bob Doan  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: csharp examples
+	* src/examples/Makefile.am: likewise
+	* src/examples/csharp/Makefile.am: likewise
+	* src/examples/csharp/example.cs: likewise
+
+2005-05-15 Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* libsrc/formatstring.c: Fix PDF/Locale Problems
+	* libsrc/pdf.c: likewise
+	* rpdf/rpdf.c: likewise
+
+2005-05-15  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: add c#, renerate the bindings
+	* bindings/Makefile.am: likewise
+	* bindings/csharp/Makefile.am: likewise
+	* bindings/csharp/csharp.c:  likewise
+	* bindings/interfaces/Makefile.am: likewise
+	* bindings/interfaces/SWIGTYPE_p_f_p_rlib_p_void__int.cs: likewise
+	* bindings/interfaces/SWIGTYPE_p_rlib.cs: likewise
+	* bindings/interfaces/SWIGTYPE_p_void.cs: likewise
+	* bindings/interfaces/librlib.java: likewise
+	* bindings/interfaces/librlibJNI.java: likewise
+	* bindings/interfaces/rlib.cs: likewise
+	* bindings/interfaces/rlib.java:  likewise
+	* bindings/interfaces/rlib.pm: likewise
+	* bindings/interfaces/rlib.py: likewise
+	* bindings/interfaces/rlibJNI.java: 
+	* bindings/interfaces/rlibPINVOKE.cs: likewise
+	* bindings/java/java.c: likewise
+	* bindings/perl/perl.c: likewise
+	* bindings/python/python.c: likewise
+	* bindings/php/php.c: Fix order of paramaters for custom R functions
+	* libsrc/generate_bindings.sh: easily generate the bindings
+	* libsrc/rlib.i: sync
+
+2005-05-13  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: Ability to add custom functions to the R engine
+	* libsrc/api.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/array.php: likewise
+	* src/examples/php/array.xml: likewise
+
+2005-05-13  Shannon Weyrick <sweyrick@roadsend.com>
+	* libsrc/html.c: Ability to suppress HEAD and BODY in html
+
+2005-05-13  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: Better default colors for line graphs
+	* libsrc/html.c: pretier X axis labels, make sure that the last x axis line is a full line and not a minor tick.
+	* libsrc/pdf.c: likewise
+	* src/examples/php/array.php: nada
+	* src/examples/php/array.xml: nada
+
+2005-05-10  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: 1.3.4
+	* libsrc/navigation.c: fix followers
+	* libsrc/reportgen.c: likewise
+	* libsrc/pdf.c: a little more padding between x_axis_title and the graph
+
+2005-05-03  Bob Doan  <bdoan@sicompos.com>
+	* AUTHORS: Add peoples
+	* NEWS: RELEASE TIME
+	* configure.in: Cranberries
+	* libsrc/api.c: Don't suggest UTF8 charset in non utf8 mode
+	* src/examples/php/array.php: spanish chars
+
+2005-05-02  Mike Roth  <mroth@sicompos.com>
+	* libsrc/html.c: if number or point < 90 use width=2, > 90 use width=1 for line plots
+	* src/examples/php/array.php: nothing
+	* src/examples/php/array.xml: nothing
+
+2005-05-02  Bob Doan  <bdoan@sicompos.com>
+	* bindings/interfaces/Makefile.am: add interfaces to extradist
+	* doc/basictraining.sgm: manual improvements
+	* doc/capi.sgm: likewise
+	* doc/examples.sgm: likewise
+	* doc/phpapi.sgm: likewise
+	* libsrc/free.c:  add column_pad atrribute
+	* libsrc/layout.c:  likewise
+	* libsrc/parsexml.c:  likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/array.php: load rlib.so not librlib.so
+	* src/examples/php/example.php: likewise
+	* src/examples/php/fixed_part.php: likewise
+	* src/examples/php/flow_part.php: likewise
+	* src/examples/php/follower.php: likewise
+	* src/examples/php/graph.php: likewise
+	* src/examples/php/hungary.php: likewise
+	* src/examples/php/images.php: likewise
+	* src/examples/php/labels.php: likewise
+	* src/examples/php/labels.xml: likewise
+	* src/examples/php/odbc.php: likewise
+	* src/examples/php/pages_across.php: likewise
+	* src/examples/php/xml.php: test new mailing labels features
+
+2005-05-02  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: new api to set minor ticks by location
+	* libsrc/api.c:  likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: make sure x axis labels don't go off right edge of graph also be smart if there are vertical x labels don't let them overwrite each other
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: try harder not to crash
+
+2005-05-01  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: Add the spec file to the extra dist
+
+2005-05-01  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* autogen.sh: Don't relink
+	* bindings/interfaces/Makefile.am: I decided that the "-module -avoid-version" linker options should
+         be unconditional on all bindings, and omit the "lib" prefix and the
+         binding name suffix, because this will cause the least namespace
+         confusion. E.g. you can use "use rlib;" with PERL, etc. Now all
+         binding shared modules are named rlib.so. This is not a problem as
+         they are compiled and installed in different directories.
+	* bindings/interfaces/librlib.pm: likewise
+	* bindings/interfaces/librlib.py: likewise
+	* bindings/interfaces/rlib.pm: likewise
+	* bindings/interfaces/rlib.py: likewise
+	* bindings/java/java.c: likewise
+	* bindings/perl/Makefile.am: likewise
+	* bindings/perl/perl.c: likewise
+	* bindings/php/Makefile.am: likewise
+	* bindings/python/Makefile.am: likewise
+	* bindings/python/python.c: likewise
+	* configure.in: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/xml_data_source.c: 64bit/ windows compile fixes
+	* rlib.spec.in: new RPM Spec file
+
+2005-04-30  Bob Doan  <bdoan@sicompos.com>
+	* src/examples/php/Makefile.am: My spelling sucks
+
+2005-04-30  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: support multiple detail columns in a report
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/Makefile.am: examples are fun
+	* src/examples/php/labels.php: likewise
+	* src/examples/php/labels.xml: likewise
+
+2005-04-27  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: Support Minor graph ticks, more graphing cleanup
+	* libsrc/api.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/graph.xml: likewise
+
+2005-04-27 Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* bindings/java/Makefile.am: Remove -export-dynamic 
+	* bindings/perl/Makefile.am: likewise
+	* bindings/php/Makefile.am: likewise
+	* bindings/python/Makefile.am: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* libsrc/Makefile.am: liewise
+	* rpdf/Makefile.am: likewise
+
+2005-04-25  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+	* rpdf/rpdf.c: fix extern variables for static linking on win32
+	* rpdf/rpdf.h: likewise
+
+2005-04-24  Bob Doan  <bdoan@sicompos.com>
+            Jeremy Lee <jlee@platinumtel.com> 
+            Warren Smith <wsmith@platinumtel.com>
+				
+	* bindings/interfaces/librlib.java: new XML Input DataSource
+	* bindings/interfaces/librlib.py: likewise
+	* bindings/interfaces/librlibJNI.java: likewise
+	* bindings/java/java.c: likewise
+	* bindings/php/php.c: likewise
+	* bindings/python/python.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/xml_data_source.c: likewise
+	* src/examples/php/data.xml: likewise
+	* src/examples/php/xml.php: likewise
+
+2005-04-24  Bob Doan  <bdoan@sicompos.com>
+	* bindings/interfaces/librlib.java: Resync bindsing w/ new API
+	* bindings/interfaces/librlib.py: likewise
+	* bindings/interfaces/librlibJNI.java: likewise
+	* bindings/java/java.c: likewise
+	* bindings/perl/perl.c: likewise
+	* bindings/python/python.c: likewise
+	* rpdf/rpdf.c: Image height now points to height and not width
+	* libsrc/charencoder.c: case return in non utf8 mode to suppress warnings
+	* AUTHORS: Add Zoltan
+
+2005-04-24  Zoltan Boszormenyi <zboszor@dunaweb.hu>
+
+	reviewed by:  Bob Doan  <bdoan@sicompos.com>
+
+	* autogen.sh: Fix libtool init
+	* bindings/java/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* bindings/perl/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* bindings/php/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* bindings/php/array_data_source.c: win32 port
+	* bindings/python/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* configure.in: Autodetect win32, additional cleanup
+	* inputs/mysql/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* inputs/mysql/mysql.c: win32 port
+	* inputs/odbc/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* inputs/odbc/odbc.c: win32 port / Make it actually work 
+	* inputs/postgre/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* inputs/postgre/postgre.c:win32 port
+	* libsrc/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* libsrc/api.c: Correct the order of paramaters passed to utf8 encoding
+	* libsrc/breaks.c: Cast variables to suppress warnings
+	* libsrc/charencoder.c: win32 port
+	* libsrc/formatstring.c: 64 bit port
+	* libsrc/fxp.c: remove llabs prototype
+	* libsrc/gd.c: win32 port / sync non gd support api w/ gd support api
+	* libsrc/graphing.c: win32 port
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_langinfo.c: new for win32 support  (FROM N. Durner )
+	* libsrc/rlib_langinfo.h: likewise (FROM N. Durner )
+	* libsrc/save.c: win32 port
+	* libsrc/util.c: likewise
+	* libsrc/value.c: likewise
+	* rlib.pc.in: no cpdf
+	* rpdf/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* rpdf/rpdf.c: win32 port
+	* rpdf/test.c: likewise
+	* src/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* src/examples/c/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+	* tests/Makefile.am: Don't override stuff we shouldn't / build win32 dll
+
+2005-04-22  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/resolution.c: don't r_strlen the string, strlen to get they byte count, look up memory variables correctly
+
+2005-04-21  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/charencoder.c: nada
+	* libsrc/layout.c: don't r_strlen the string, strlen to get they byte count
+	* src/examples/php/hungary.php: 
+	* src/examples/php/hungary.xml:
+
+2005-04-21  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: Lots of work on making the graphs look pretier.  New api to set graph region bg colors, new gd non bold medium font
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/gd.c: likewise
+	* libsrc/gdFontMedium.c: likewise
+	* libsrc/gdFontMedium.h: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/rlib_gd.h: likewise
+	* libsrc/txt.c: likewise
+	* rpdf/rpdf.c: only 1 '\n' at the end of the pdf
+	* src/examples/php/hungary.php: 
+
+2005-04-18  Bob Doan  <bdoan@sicompos.com>
+	* bindings/java/java.c: restore utf8 support, redo utf8 api's, fix a few small rpdf problems
+	* bindings/perl/perl.c: likewise
+	* bindings/php/php.c: likewise
+	* bindings/python/python.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/charencoder.h: likewise
+	* libsrc/containers.c: likewise
+	* libsrc/containers.h: likewise
+	* libsrc/datetime.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/util.c:  likewise
+	* libsrc/util.h: likewise
+	* libsrc/value.c:  likewise
+	* rpdf/rpdf.c:  likewise
+	* src/examples/php/hungary.php: likewise
+	* src/examples/php/hungary.xml: likewise
+
+2005-04-13  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: Don't #ifdef around the datasources.  It's dumb.  They are plugins
+	* libsrc/api.c: likewise
+	* libsrc/datasource.c:  likewise
+	* rpdf/rpdf.c: more image fun
+	* rpdf/rpdf.h: likewise
+
+2005-03-31  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: keep track of pages correctly
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c:  likewise
+	* libsrc/layout.c:  likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/txt.c:  likewise
+	* rpdf/rpdf.c:  likewise
+
+2005-03-30  Bob Doan  <bdoan@sicompos.com>
+	* rpdf/rpdf.c: Correct support set current page
+	* rpdf/test.c: and test it
+
+2005-03-30  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c:  faster and less crash prone
+	* libsrc/html.c:  likewise
+	* libsrc/pdf.c:  likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h:likewise
+	* rpdf/rpdf.c: likewise
+
+2005-03-29  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/csv.c: Dont' crash w/ delayed data
+	* libsrc/free.c: disabled axis support
+	* libsrc/graphing.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: ..
+	* rpdf/rpdf.c: Make large reports that switch fonts REALLY FAST
+
+2005-03-23  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: mod axis support
+	* libsrc/graphing.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/layout.c: trim links works better
+	* libsrc/rlib.h: ..
+	* rpdf/rpdf.c: started to add png support
+	* rpdf/rpdf.h: likewise
+	* rpdf/test.c: likewise
+	* src/examples/php/graph.php: test
+	* src/examples/php/graph.xml: test
+
+2005-03-15  Bob Doan  <bdoan@sicompos.com>
+	* rpdf/test.c: add a little test program
+	* rpdf/Makefile.am: likewise
+	* rpdf/rpdf.c: likewise
+	* rpdf/rpdf.h: likewise
+	* src/examples/php/graph.xml: test delayed output
+
+2005-03-18  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: Mike's next idea
+
+2005-03-18  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: Mike says I need to have better Y axis labels still
+
+2005-03-18  Shannon Weyrick <weyrick@roadsend.com>
+	* inputs/mysql/mysql.c: get error messages from data source
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/api.c: likewise
+	* libsrc/rlib_input.h: likewise	
+
+2005-03-18  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: Axis labels are MUCH better!
+	* src/examples/php/graph.php: likewise
+
+2005-03-18  Mike Roth  <mroth@sicompos.com>
+	* doc/Makefile:
+	* libsrc/graphing.c: (rlib_graph): add + 1 to left side y_max
+
+2005-03-18  Bob Doan  <bdoan@sicompos.com>
+	* doc/Makefile: nada
+	* libsrc/graphing.c: Try harder to int axis values, have mod values for left axis "hints"
+	* libsrc/axis.c: likewise
+	* libsrc/breaks.c: Respect OUTPUT pagination paramaters (Fixes multiple page footers in HTML)
+	* libsrc/csv.c: nada
+	* libsrc/free.c: new fields
+	* libsrc/html.c: support delayed output
+	* libsrc/layout.c:  support delayed output & new rtrim feature on html linking
+	* libsrc/parsexml.c: new fields
+	* libsrc/pcode.c: new totpages
+	* libsrc/pcode.h: likewise
+	* libsrc/pdf.c: delayed output
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: new fields
+	* libsrc/txt.c: delayed output
+	* rpdf/rpdf.c: ..
+	* rpdf/rpdf.h: ..
+	* src/examples/php/graph.php: ..
+	* src/examples/php/graph.xml: ..
+
+2005-03-13   Bob Doan  <bdoan@sicompos.com>
+	* configure.in: make it at least COMPILE on win32
+	* doc/Makefile: likewise
+	* libsrc/api.c: likewise
+	* libsrc/axis.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/formatstring.c: likewise 
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/save.c: likewise
+	* libsrc/util.c: likewise
+
+2005-03-08  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: include JPEG README
+	* NEWS: RELEASE TIME
+
+2005-03-06  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: don't require python v 2.4
+
+2005-03-06  Bob Doan  <bdoan@sicompos.com>
+	* autogen.sh: don't have binding flags in RLIB_CFLAGS and gstart to get PERL bindings in place
+	* bindings/interfaces/librlib.pm: likewise
+	* bindings/java/Makefile.am: likewise
+	* bindings/perl/Makefile.am: likewise
+	* bindings/perl/perl.c: likewise
+	* bindings/php/Makefile.am: likewise
+	* bindings/python/Makefile.am: likewise
+	* configure.in: likewise
+	* doc/Makefile: NADA
+	* src/examples/Makefile.am: likewise
+	* src/examples/perl/Makefile.am: likewise
+	* src/examples/perl/example.pm: likewise
+
+2005-03-06  Bob Doan  <bdoan@sicompos.com>
+	* bindings/interfaces/Makefile.am: Make python and java work again, make utf8 disabled the defualt, don't -Werror on swig stuff 
+	* bindings/interfaces/SWIGTYPE_p_f_p_rlib_p_void__int.java: likewise
+	* bindings/interfaces/SWIGTYPE_p_void.java:  likewise
+	* bindings/interfaces/librlib.java: likewise
+	* bindings/interfaces/librlib.py: likewise
+	* bindings/interfaces/librlibJNI.java:  likewise
+	* bindings/java/java.c: likewise
+	* bindings/php/Makefile.am: likewise
+	* bindings/python/python.c: likewise
+	* configure.in: likewise
+	* doc/Makefile: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/free.c: likewise
+	* libsrc/pdf.c:  likewise
+	* libsrc/rlib.i: likewise
+	* rpdf/Makefile.am: likewise
+	* rpdf/rpdf.h: likewise
+	* src/examples/java/Makefile.am: likewise
+	* src/examples/java/example.java:  likewise
+	* src/examples/python/example.py: likewise
+
+2005-03-06  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: Added docs
+	* README: spelling
+	* README-JPEG: added JPEG READ ME STUFF
+	* configure.in: added doc building abilitities
+	* doc/IMAGES/Makefile.am: new
+	* doc/Makefile: -- this needs to be removed from CVS NOW
+	* doc/Makefile.am: new
+	* libsrc/free.c: don't call dlclose.. call g_module_close
+	* libsrc/gd.c: not pass a null pointer to GD
+	* libsrc/pdf.c: don't attempt to put NaN in PDF's
+	* rpdf/rpdf.c:  likewise
+
+2005-03-04  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: Fix/ Prevent crashes in a bunch of different places
+	* libsrc/free.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/rlib.h: likewise
+
+2005-03-02  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/parsexml.c: don't make iconv pointer -1 right after we open UTF-8 (Makes Spanish Work Again)
+
+2005-03-01  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: don't like w/ rpdf everywehere
+
+2005-03-01  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: link w/ rpdf even if its not installed
+
+2005-03-01  Michael Roth  <mroth@sicompos.com>
+	* doc/Makefile: Add graphing
+	* doc/book.sgm: Add graphing
+	* doc/capi.sgm: Re-number Chapters
+	* doc/examples.sgm: Re-number Chapters
+	* doc/graphing.sgm: new
+	* doc/phpapi.sgm: Re-number Chapters
+
+2005-02-28  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: Say hello to RPDF!  it's Free!! it's finally free!!! No more CPDF!!! Woohoo!
+	* bindings/php/php.c:
+	* configure.in:
+	* libsrc/Makefile.am:
+	* libsrc/api.c: 
+	* libsrc/pdf.c:
+	* libsrc/reportgen.c: 
+	* rpdf/Makefile.am:
+	* rpdf/rpdf.c:
+	* rpdf/rpdf.h:
+	* src/examples/php/array.php:
+	* src/examples/php/graph.php:
+
+2005-02-28  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: fix rlib_version() call crash
+	* libsrc/layout.c: get correct height of line all the time (from parts if we hae to)
+	* src/examples/php/images.php: nada
+	* src/examples/php/images.xml: nada
+
+2005-02-25  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/gd.c:
+	Fix compile error when libgd is not found.
+	* libsrc/rlib_gd.h:
+	Fix compile error when libgd is not found.
+
+2005-02-24  Bob Doan  <bdoan@sicom.com>
+	* Makefile.am: include doc
+	* libsrc/graphing.c: always hint legend
+	* libsrc/pdf.c: fix comment typo
+
+2005-02-18  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: BSD doesn't like the -ldl
+
+2005-02-17  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/navigation.c: don't loop forever
+	* libsrc/pcode_op_functions.c: Don't Crash on null string cat AND Carol Fouse teachs Mike and I elementy rounding math
+
+2005-02-14  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: Try our best to graph data sets w/ one row
+	* libsrc/html.c: likewise
+	* libsrc/pdf.c: likewise
+
+2005-02-09  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/reportgen.c: Mike likes ReportHeader to come out w/ No Data.. I agree.. I put it back
+
+2005-02-09  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/reportgen.c: Lay out nodata correctly
+	* src/examples/php/images.php: nada
+
+2005-02-08  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: fix colors
+	* libsrc/html.c: fix location of second y axis
+
+2005-02-08  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/navigation.c: correctly move followers
+	* libsrc/pcode.c: don't crash on null val string cmps
+	* libsrc/reportgen.c: don't process variables until after we KNOW we have good data
+	* libsrc/resolution.c: nada
+
+2005-02-07  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/axis.c: always have a max and a min
+	* libsrc/gd.c: color pool
+	* libsrc/graphing.c: nada
+	* libsrc/html.c: better x axis labeling
+	* libsrc/pdf.c: don't have div 0 in pdf
+	* libsrc/rlib_gd.h: color pool
+
+2005-02-07  Michael Roth  <mroth@sicompos.com>
+	* src/examples/php/graph.php: Debug Example
+	* src/examples/php/graph.xml: Debug Example
+
+2005-02-04  Michael Roth  <mroth@sicompos.com>
+	* libsrc/graphing.c: (rlib_graph): line size by font
+
+2005-02-03  Michael Roth  <mroth@sicompos.com>
+	* bindings/php/php.c: (ZEND_FUNCTION): Spelling paramater -> parameter
+	* libsrc/api.c: (rlib_init_with_environment),
+	(rlib_set_output_parameter): Spelling paramater -> parameter
+	* libsrc/csv.c: (rlib_csv_start_boxurl), (rlib_csv_end_boxurl): Links printable in pagefooter
+	* libsrc/html.c: (rlib_html_start_boxurl), (rlib_html_end_boxurl),
+	(rlib_html_start_report), (html_graph_start): Links printable in pagefooter
+	* libsrc/layout.c: (rlib_layout_output_extras_start),
+	(rlib_layout_output_extras_end), (rlib_layout_output_extras): Links printable in pagefooter
+	* libsrc/pdf.c: (pdf_start_boxurl), (pdf_set_font_point_actual),
+	(pdf_end_boxurl): Links printable in pagefooter
+	* libsrc/rlib.h: Links printable in pagefooter
+	* libsrc/txt.c: (rlib_txt_start_boxurl), (rlib_txt_end_boxurl):
+	* src/examples/php/graph.php: Links printable in pagefooter
+
+2005-02-02  Bob Doan  <bdoan@sicompos.com>
+	* AUTHORS: Updates
+	* libsrc/html.c: support meta data, don't have html code before head
+	* libsrc/layout.c: if nothing is one a line still calculate the correct size
+	* libsrc/reportgen.c: likewise
+	* src/Makefile.am: (c) 2005
+	* src/examples/Makefile.am: likewise
+	* src/examples/c/Makefile.am:likewise
+	* src/examples/c/example.c:likewise
+	* src/examples/common/Makefile.am:likewise
+	* src/examples/java/Makefile.am:likewise
+	* src/examples/php/images.php:likewise
+	* src/examples/python/Makefile.am:likewise
+	* src/rlibc.c:likewise
+	* tests/Makefile.am:likewise
+	* tests/test1.c:likewise
+	* tests/test2.c:likewise
+	* tests/test3.c:likewise
+
+2005-02-02  Michael Roth  <mroth@sicompos.com>
+	* libsrc/reportgen.c: (rlib_layout_report): move signal up one
+	* libsrc/rlib.h: define correct number of signals
+
+2005-02-01  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: Change (c) Date to 2005, Ability to have images on lines, REPORT_START signal
+	* bindings/php/array_data_source.c: likewise
+	* bindings/php/environment.c: likewise
+	* bindings/php/php.c: likewise
+	* bindings/php/rlib_php.h: likewise
+	* configure.in: likewise
+	* inputs/Makefile.am: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/mysql/mysql.c: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c:  likewise
+	* libsrc/axis.c: likewise
+	* libsrc/breaks.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/charencoder.h: likewise
+	* libsrc/containers.c: likewise
+	* libsrc/containers.h: likewise
+	* libsrc/csv.c:  likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/datetime.c: likewise
+	* libsrc/datetime.h: likewise
+	* libsrc/environment.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/fxp.c: likewise
+	* libsrc/gd.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c:  likewise
+	* libsrc/layout.c:  likewise
+	* libsrc/load.c: likewise
+	* libsrc/navigation.c: likewise
+	* libsrc/parsexml.c:  likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c:  likewise
+	* libsrc/ralloc.c: likewise
+	* libsrc/ralloc.h: likewise
+	* libsrc/reportgen.c:  likewise
+	* libsrc/resolution.c:  likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_gd.h: likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c:  likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+	* libsrc/value.c: likewise
+	* libsrc/value.h: likewise
+	* src/examples/php/Makefile.am: likewise
+	* src/examples/php/green.jpg: likewise
+	* src/examples/php/images.php: likewise
+	* src/examples/php/images.xml: likewise
+	* src/examples/php/red.jpg: likewise
+	* src/examples/php/yellow.jpg: likewise
+
+2005-01-26  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: bump to 1.3.2
+	* libsrc/parsexml.c:  In an external load have an optional query paramater making dynamic loaders easier
+	* src/examples/php/graph.xml: ..
+
+2005-01-20  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: Release Time
+	* configure.in: Snow Patrol is a pretty good band.  Chceck them out
+
+2005-01-14  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: Don't try to graph a dataset <= 1 row
+
+2005-01-14  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/html.c: vertical text on x axis w/ line graphs now is in the right spot.
+
+2005-01-13  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: go to the first record of everything when refressing data sources
+
+2005-01-13  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: don't conflict w/ PHP
+	* libsrc/formatstring.c: likewise
+	* libsrc/graphing.c:  better graphing
+	* libsrc/html.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/array.php: likewise
+	* src/examples/php/graph.php: likewise
+
+2005-01-13  Michael Roth  <mroth@sicompos.com>
+	* libsrc/formatstring.c:
+	* libsrc/pcode.c: (rlib_infix_to_pcode): Change iif
+
+2005-01-12  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: make it compile in cygwin
+	* libsrc/formatstring.c: likewise
+	* libsrc/util.c: likewise
+
+2005-01-12  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/axis.c: new changes from Mike Ibison
+	* libsrc/csv.c: don't crash on csv and txt output w/ graphing
+	* libsrc/gd.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_gd.h: likewise
+	* libsrc/txt.c:  likewise
+	* src/examples/php/graph.php: likewise
+
+2005-01-12  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: add support for double Y axis
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/graph.php: likewise
+	* src/examples/php/graph.xml: likewise
+
+2005-01-11  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/parsexml.c: Be able to use variable in single report page headers and report headers again
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+
+2005-01-06  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: start of "side" support for Y axis, make line graphs a tad wider for easier readibility
+	* libsrc/gd.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_gd.h: likewise
+	* src/examples/php/graph.php: likewise
+	* src/examples/php/graph.xml: likewise
+
+2005-01-06  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/gd.c: compile fixes
+	* libsrc/graphing.c: likewise
+	* libsrc/layout.c: respect suppress in csv output
+
+2005-01-05  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: better gd checking
+	* libsrc/Makefile.am: likewise
+	* inputs/odbc/odbc.c: remove debuggin
+	* libsrc/api.c: gd support in html working
+	* libsrc/gd.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_gd.h: likewise
+	* src/examples/php/graph.php: likewise
+
+2005-01-03  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pdf.c: make offset graph work (Thanks Mike Ibison!)
+	* src/examples/php/graph.php: data...
+
+2005-01-03  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: Better checks for gd
+	* libsrc/Makefile.am: likewise
+	* libsrc/gd.c: likewise
+	* libsrc/graphing.c: cleanup/ pie work
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/graph.php: likewise
+	* src/examples/php/graph.xml: likewise
+
+2004-12-31  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: line graphs, pie graphs, and make sure the graph will fit, more minor cleanups
+	* libsrc/graphing.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/graph.php: likewise
+	* src/examples/php/graph.xml: likewise
+
+2004-12-30  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/free.c: legends, x axis labels try to fit better, minor cleanups
+	* libsrc/graphing.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/graph.php: likewise
+	* src/examples/php/graph.xml: likewise
+
+2004-12-23  Bob Doan  <bdoan@sicompos.com>
+	* inputs/odbc/odbc.c: nada
+	* libsrc/api.c: better error reporting, set follower resultset to FALSE
+	* libsrc/layout.c: better HTML link support w/ bg colors
+	* libsrc/navigation.c: followers are smarter
+	* libsrc/resolution.c: of a follower can't more anymore its gets puts ona virtual NULL row
+	* libsrc/rlib.h: protos
+	* src/examples/php/array.php: nada
+	* src/examples/php/array.xml: nada
+
+2004-12-17  Michael Roth  <mroth@sicompos.com>
+
+	* libsrc/graphing.c: (rlib_graph): remove debug prints
+
+2004-12-17  Michael Roth  <mroth@sicompos.com>
+
+	* bindings/php/php.c: (ZEND_FUNCTION): add n_to_1 follower
+	* libsrc/api.c: (rlib_execute),
+	(rlib_add_resultset_follower_n_to_1),
+	(rlib_add_resultset_follower): add n_to_1 follower
+	* libsrc/free.c: (rlib_free_follower), (rlib_free): add n_to_1 follower
+	* libsrc/graphing.c: (rlib_graph): bar graph
+	* libsrc/navigation.c: (rlib_do_followers),
+	(rlib_navigate_followers): add n_to_1 follower
+	* libsrc/pdf.c: (pdf_graph_draw_bar): bar graph
+	* libsrc/resolution.c: (rlib_resolve_followers): add n_to_1 follower
+	* libsrc/rlib.h: add n_to_1 follower
+
+2004-12-13  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/layout.c: save report font size when the PART starts a new page
+	* libsrc/reportgen.c: don't try to center things larger then the width of the field
+	* src/examples/php/array.php: testing
+	* src/examples/php/array.xml: likewise
+
+2004-12-08  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode_op_functions.c: don't crash on NULL values
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+
+2004-12-03  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/graphing.c: be able to label the y axis and correctly account for space on the left, and better colors
+	* libsrc/pdf.c: likewise
+	* libsrc/rlib.h: likewise
+
+2004-12-03  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: 
+	* configure.in: better detect gd
+	* libsrc/Makefile.am: split stuff into axis.c
+	* libsrc/axis.c: split out from graphing
+	* libsrc/graphing.c: likewise
+	* libsrc/pdf.c: be able to rotate text
+	* libsrc/rlib.h: new api
+	* src/examples/php/graph.php: values
+
+2004-12-02  Bob Doan  <bdoan@sicompos.com>
+	* bindings/python/python.c: initial graphing support / code cleanup / use more glib stuff
+	* configure.in: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/graphing.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h:likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h:likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h:likewise
+	* src/examples/php/Makefile.am:likewise
+	* src/examples/php/graph.php:likewise
+	* src/examples/php/graph.xml:likewise
+
+2004-11-17  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: made utf8 work again
+	* libsrc/api.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/rlib.h: likewise
+
+2004-11-16  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: make new page dynamic
+	* libsrc/free.c: make rlib_free_pcode public
+	* libsrc/pcode.c: new eval
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/array.xml: test eval
+
+2004-11-07  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: roll back incorrect return FALSE on first if source has no data
+
+2004-11-04  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: return FALSE on first if source has no data
+	* libsrc/layout.c: hr->size is now a pcode
+	* libsrc/resolution.c: likewise
+	* src/examples/php/flow_part.php:
+
+2004-11-01  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/parsexml.c: compile error fix
+	* libsrc/api.c: new r.format variable
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/Makefile.am: better names
+	* src/examples/php/array.php: likewise
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/fixed_part.php: likewise
+	* src/examples/php/fixed_part.xml: likewise
+	* src/examples/php/fixed_part_test.php: likewise
+	* src/examples/php/fixed_part_test.xml: likewise
+	* src/examples/php/flow_part.php: likewise
+	* src/examples/php/flow_part.xml: likewise
+	* src/examples/php/flow_part_test.php: likewise
+	* src/examples/php/flow_part_test.xml: likewise
+
+2004-10-29  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/environment.c: allow for different "m." data types
+	* bindings/php/php.c: implement signals, iterations, and query refreshing
+	* libsrc/api.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/fixed_part_test.php: likewise
+	* src/examples/php/fixed_part_test.xml: likewise
+
+2004-10-28  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/resolution.c: figure out pages across earlier to prevent later memory corruption
+	* libsrc/layout.c:  move things around
+	* libsrc/pcode.c: check for NULL stack push
+
+2004-10-22  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: don't crash on NULL format string
+
+2004-10-22  Michael Roth  <mroth@sicompos.com>
+
+	* libsrc/html.c: (rlib_html_hr): if HorizontalLine size=0, don't output
+
+2004-10-20  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/layout.c: default part should inherit report orientation
+	* libsrc/parsexml.c: likewise
+	* libsrc/reportgen.c: likewise
+
+2004-10-19  Bob Doan  <bdoan@sicompos.com>
+	* inputs/mysql/mysql.c: td->pd tr->pr parts now have a report header, report concatination works again, nodata works again
+	* libsrc/breaks.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* src/examples/php/fixed_part_test.xml: likewise
+	* src/examples/php/flow_part_test.xml: likewise
+
+2004-10-16  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: compile fixes, remove report specific iconv stuff.. make the xml stuff just do it, update copyright
+	* libsrc/breaks.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/charencoder.h: likewise
+	* libsrc/containers.c: likewise
+	* libsrc/containers.h: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/datetime.c: likewise
+	* libsrc/datetime.h: likewise
+	* libsrc/environment.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/fxp.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/navigation.c: likewise
+	* libsrc/parsexml.c:  likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/ralloc.c: likewise
+	* libsrc/ralloc.h: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+	* libsrc/value.c: likewise
+	* libsrc/value.h: likewise
+
+2004-10-13  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: keep privitiazing rlib, reworked memo stuff to be more suitable for later development
+	* libsrc/free.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+
+2004-10-13  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: update the music I'm listening to
+	* libsrc/csv.c: bold and italics support
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+	* src/examples/php/Makefile.am: likewise
+	* src/examples/php/array.php: likewise
+	* src/examples/php/array.xml: likewise
+	* src/examples/php/array2.xml: likewise
+	* src/examples/php/array_test.php: likewise
+	* src/examples/php/array_test.xml: likewise
+	* src/examples/php/array_test2.xml: likewise
+	* src/examples/php/flow_part_test.xml: likewise
+
+2004-10-12  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: added bold and italics properties (doesn't work yet), renamed struct fields for consistant naming convention
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+
+2004-10-12  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: new api function to load a report from memory, td borders, respect borders from xml
+	* libsrc/api.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/txt.c:  likewise
+	* src/examples/php/fixed_part_test.xml: likewise
+
+2004-10-12  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: free things, txt output, csv output, cleanup
+	* bindings/python/python.c: likewise
+	* libsrc/api.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/txt.c: likewise
+	* src/examples/c/example.c: likewise
+	* src/examples/php/array_test.php: likewise
+	* src/examples/php/array_test.xml: likewise
+	* src/examples/php/fixed_part_test.php: likewise
+	* src/examples/php/flow_part_test.php: likewise
+	* tests/test1.c: likewise
+	* tests/test2.c: likewise
+	* tests/test3.c: likewise
+
+2004-10-11  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: make pages across work again and HTML output work again
+	* libsrc/csv.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c: likewise
+	* src/examples/php/fixed_part_test.php: likewise
+	* src/examples/php/flow_part_test.php: likewise
+	* src/examples/php/pages_across.php: likewise
+	* src/examples/php/pages_across.xml: likewise
+
+2004-10-10  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: more work on parts
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+	* src/examples/php/fixed_part_test.php: likewise
+	* src/examples/php/fixed_part_test.xml: likewise
+	* src/examples/php/flow_part_test.php: likewise
+	* src/examples/php/flow_part_test.xml: likewise
+
+2004-10-09  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: flow parts for PDF are working nice
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/layout.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+	* src/examples/php/part_test.xml: likewise
+
+2004-10-06  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/layout.c: initital add
+
+2004-10-06  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: initial work @ getting parts working
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise 
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c: likewise
+	* src/examples/php/array_test2.xml: likewise
+	* src/examples/php/part_test.php: likewise
+	* src/examples/php/part_test.xml: likewise
+	* src/rlibc.c: likewise
+
+2004-09-03  Bob Doan  <bdoan@sicompos.com>
+	* inputs/mysql/mysql.c: remove debug stuff
+	* libsrc/api.c: nada
+	* libsrc/pcode_op_functions.c: don't try to propper an empty string
+
+2004-09-03  Michael Roth  <mroth@sicompos.com>
+	* bindings/php/array_data_source.c: (rlib_php_array_first), change to set to first element 
+	(php_array_new_result_from_query): 
+	* inputs/mysql/mysql.c: (rlib_mysql_first): add mysql_data_seek - return to first element
+	* libsrc/html.c: (rlib_html_end_report): calculate size of report (HTML) correctly.
+	* libsrc/reportgen.c: (make_report): Goto first element of query on each mainloop so that the same query may be used again w/o re-query 
+	* src/examples/php/array_test.php:
+
+2004-08-25  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/datetime.c: (rlib_datetime_valid_date),
+	(rlib_datetime_set_date), (rlib_datetime_format_date):
+	Print invalid DATEs as '' (empty string).
+
+2004-08-13  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: Detect an empty result set correctly in all places to avoid a crash
+	* src/examples/php/array_test.php: nada
+
+2004-08-13  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: Detect an empty result set correctly
+	* src/examples/php/array_test.php: likewise
+	* src/examples/php/array_test.xml: likewise
+
+2004-08-06  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: make breaks work for the last break
+	* src/examples/php/array_test.php: an example w/ breaks to properly test breaking
+	* src/examples/php/array_test.xml: likewise
+
+2004-08-05  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: Correctly find OP_SUB
+	* libsrc/resolution.c: nada
+	* src/examples/php/array_test.xml: nada
+
+2004-08-04  Steve Tilden  <stilden@sicompos.com>
+	* doc/symboltable.sgm: add stodtsql, grouped time fncs, spelling
+
+2004-08-03  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: add stodtsql for steve
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* src/examples/php/array_test.xml: nada
+
+2004-07-30  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/formatstring.c: cast
+	* libsrc/pcode_op_functions.c: set the pointer in the NUMBER condition so it actually works
+
+2004-07-30  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode_op_functions.c: fixed ceil and floor functions to actually work
+
+2004-07-29  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode.c: fix semi MAJOR expression compile problem
+	   round(1.0*100/60) did not work!!
+		make expressions like -5-2 work
+	* libsrc/pcode_op_functions.c: fix round operator
+	* libsrc/resolution.c: ditto
+
+2004-07-29  Michael Roth  <mroth@sicompos.com>
+	* libsrc/api.c: compile fixes
+	* libsrc/parsexml.c: likewise
+
+2004-07-27  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/pcode.c: (rlib_infix_to_pcode):
+		Fix problem valgrind found.
+		
+2004-07-26  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: merge fixes from stable branch
+
+2004-07-26  Bob Doan  <bdoan@sicompos.com>
+	* inputs/mysql/Makefile.am: merge fixes from stable branch, IE content type, a invalid free, compile fixes
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+
+2004-07-21  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/parsexml.c: More loadings of parts (with out breaking anything but it leaks)
+	* libsrc/rlib.h: likewise
+	* src/examples/php/part_test.php: new test for parts
+	* src/examples/php/part_test.xml: likewise
+
+2004-07-21  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/array_data_source.c: make it compile clean w/ -Wall
+	* src/examples/php/Makefile.am: added files for dist
+
+2004-07-21  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/Makefile.am: new array data source in PHP
+	* bindings/php/array_data_source.c: likewise
+	* bindings/php/environment.c: likewise
+	* bindings/php/php.c: likewise
+	* bindings/php/rlib_php.h: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* src/examples/php/array_test.php: and an example to go along
+	* src/examples/php/array_test.xml: likewise
+
+2004-07-21  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: bump version to unstable.. here we go
+	* libsrc/breaks.c: rlib_ functions so that they won't clash when it's linked w/ other stuff
+	                   and add structs for parts
+	* libsrc/csv.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+
+2004-07-20  Bob Doan  <bdoan@sicompos.com>
+	* autogen.sh: take out warnings by default
+	* configure.in: bump version to offical stable release
+	* doc/IMAGES/namedcolors.png: added everton as a color
+	* libsrc/util.c: likewise
+	* NEWS: OFFICAL STABLE Release time!!!!!
+	
+2004-07-16  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/reportgen.c: (rlib_process_expression_variables):
+		fix unused variable.
+
+2004-07-16  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/breaks.c: (rlib_break_all_below_in_reverse_order):
+		The 'Steve Tilden' fix (not tested).
+	* libsrc/reportgen.c: (rlib_process_expression_variables):
+		same.
+	* libsrc/rlib.h:
+		Remove ';' from content type to make IE happy.
+
+2004-07-15  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pdf.c: fix compile warnings w/ disable utf8
+	* libsrc/datetime.c: fix problem w/ gcc trying to be smart about double assigning lvalues
+	* libsrc/util.h: likewise
+
+2004-07-15  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: bump version
+	* libsrc/pcode_op_functions.c: offset from sunday, not monday
+	* libsrc/pdf.c: better disable UTF16 stuff
+
+2004-07-08  Bob Doan  <bdoan@sicompos.com>
+	* bindings/python/python.c: make it actually work
+	* libsrc/api.c: shutup
+	* libsrc/pcode.c: shutup
+	* NEWS: release time
+
+2004-06-28  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: fix typo
+	* libsrc/api.c: include config.h in c files.. not .h's
+	* libsrc/breaks.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/containers.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/datetime.c: likewise
+	* libsrc/environment.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/fxp.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/navigation.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/ralloc.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/save.c: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+	* libsrc/value.c: likewise
+
+2004-06-28  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: Fix utf8 problems and be able to disable cpdf
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/charencoder.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/util.c: likewise
+	* libsrc/util.h: likewise
+	* src/examples/c/Makefile.am: likewise
+
+2004-06-21  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/pcode.c: (rlib_str_to_long_long):
+		Fix numeric conversion so '-' works when the integer value is 0.
+
+2004-05-18  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: release time
+
+2004-05-18  Bob Doan  <bdoan@sicompos.com>
+	* inputs/mysql/mysql.c: getting ready for release
+	* libsrc/pdf.c: likewise
+	* src/Makefile.am: likewise
+
+2004-05-05  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_init_with_environment), (rlib_set_locale):
+		ability to turn off UTF8 internals
+	* libsrc/charencoder.c: (encode):
+		ability to turn off UTF8 internals
+	* libsrc/datetime.c: (split_tdformat), (rlib_datetime_format):
+		ability to turn off UTF8 internals
+	* libsrc/pcode.c: (rlib_str_to_long_long), (rlib_new_operand):
+		ability to turn off UTF8 internals
+	* libsrc/pcode.h:
+		ability to turn off UTF8 internals
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_add),
+	(rlib_pcode_operator_lte), (rlib_pcode_operator_lt),
+	(rlib_pcode_operator_gte), (rlib_pcode_operator_gt),
+	(rlib_pcode_operator_eql), (rlib_pcode_operator_noteql),
+	(rlib_pcode_operator_upper), (rlib_pcode_operator_lower),
+	(rlib_pcode_operator_left), (rlib_pcode_operator_right),
+	(rlib_pcode_operator_substring), (rlib_pcode_operator_stodt):
+		ability to turn off UTF8 internals
+	* libsrc/reportgen.c: (align_text), (execute_pcodes_for_line),
+	(wrap_memo_lines):
+		ability to turn off UTF8 internals
+	* libsrc/resolution.c: (rlib_resolve_rlib_variable),
+	(rlib_resolve_variable), (rlib_resolve_memory_variable):
+		ability to turn off UTF8 internals
+	* libsrc/util.c: (parsecolor):
+		ability to turn off UTF8 internals
+	* libsrc/util.h:
+		ability to turn off UTF8 internals - define string functions for 
+		internal data with UTF8/non-UTF8 macros
+
+2004-04-28  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: ability to turn off UTF8 internals
+	* configure.in: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/rlib.h: likewise
+
+2004-04-28  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/parsexml.c: (parse_report_variable):
+		Accept "static" as an "expression". It can later be changed to 
+		be actually static (computed once at report start).
+
+2004-04-27  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/breaks.c: (rlib_reset_variables_on_break):
+		Fix problem that reset expression variables to 0 on break.
+
+2004-04-13  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/charencoder.c: (rlib_char_encoder_encode):
+		Fix a bug when the system encoding is utf8.
+		
+2004-04-13  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/util.c: (make_utf8_locale), (make_all_locales_utf8):
+		Beefed up diagnostic messages when there is a locale problem.
+		
+2004-04-12  Chet Heilman  <cheilman@sicompos.com>
+	* bindings/java/Makefile.am:
+		add -fno-strict-aliasing
+	* bindings/perl/Makefile.am:
+		add -fno-strict-aliasing
+	* bindings/python/Makefile.am:
+		add -fno-strict-aliasing
+	* libsrc/Makefile.am:
+		Add datetime and value (new files)
+	* libsrc/datetime.c: (rlib_datetime_valid_date),
+	(rlib_datetime_valid_time), (rlib_datetime_clear_time),
+	(rlib_datetime_clear_date), (rlib_datetime_clear),
+	(rlib_datetime_makesamedate), (rlib_datetime_makesametime),
+	(rlib_datetime_compare), (rlib_datetime_set_date),
+	(rlib_datetime_set_time), (rlib_datetime_time_as_long),
+	(rlib_datetime_set_time_from_long), (rlib_datetime_format_date),
+	(rlib_datetime_format_time), (split_tdformat),
+	(rlib_datetime_format), (rlib_datetime_daysdiff),
+	(rlib_datetime_addto), (rlib_datetime_secsdiff):
+		Add new file for datatime
+	* libsrc/datetime.h:
+		Header for datetime
+	* libsrc/pcode.c:
+		Removed rlib_var stuff into its own file - value.c
+	* libsrc/pcode_op_functions.c: (rlib_pcode_add),
+	(rlib_pcode_operator_add):
+		removed datetime to its own module.
+	* libsrc/rlib.h:
+		Moved some header things to other header files
+	* libsrc/util.c:
+		Moved some general purpose functions to here.
+	* libsrc/util.h:
+		New header file for things in util.c
+	* libsrc/value.c: (rlib_var_is_string), (rlib_var_get_string),
+	(rlib_var_set_string), (rlib_var_concat_string),
+	(rlib_var_get_number), (rlib_var_set_number),
+	(rlib_var_add_number), (rlib_var_mul_number),
+	(rlib_var_divby_number), (rlib_var_mod_number),
+	(rlib_var_is_number), (rlib_var_set_datetime),
+	(rlib_var_get_datetime), (rlib_var_get_type),
+	(rlib_var_get_type_name), (rlib_var_factory_new),
+	(rlib_var_factory_alloc_new), (rlib_var_factory_get_small),
+	(rlib_var_factory_get), (rlib_var_factory_new_string),
+	(rlib_var_factory_new_number), (rlib_var_factory_new_datetime),
+	(rlib_var_factory_new_reference), (rlib_var_factory_new_iif),
+	(rlib_var_factory_free_value), (rlib_var_factory_destroy),
+	(rlib_var_stack_new), (rlib_var_stack_push), (rlib_var_stack_pop),
+	(rlib_var_stack_peek), (rlib_var_stack_destroy):
+		new functions to eventually replace current rlib_value.
+	* libsrc/value.h:
+		new functions to eventually replace current rlib_value.
+		
+2004-04-11  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: added examples
+	* autogen.sh: force compile warnings on so Chet sees warnings ;)
+	* bindings/interfaces/SWIGTYPE_p_rlib.class: these should not be in CVS
+	* bindings/interfaces/librlib.class: likewise
+	* bindings/interfaces/librlibJNI.class: likewise
+	* bindings/python/python.c: reswigged
+	* configure.in: added examples
+	* libsrc/api.c: removed silly logging
+	* libsrc/charencoder.c: likewise
+	* libsrc/datasource.c: we need to set datasource decoded to null @ the start otherwise we crash
+	* libsrc/html.c: removed silly logging
+	* libsrc/pcode.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: 
+	* libsrc/rlib.i:
+	* libsrc/util.c: 
+	* src/Makefile.am: new examples
+	* src/examples/Makefile.am: likewise
+	* src/examples/README: likewise
+	* src/examples/c/Makefile.am: likewise
+	* src/examples/c/example.c: likewise
+	* src/examples/common/Makefile.am: likewise
+	* src/examples/common/create_database: likewise
+	* src/examples/common/create_database_user: likewise
+	* src/examples/common/create_products: likewise
+	* src/examples/common/products.xml: likewise
+	* src/examples/java/Makefile.am: likewise
+	* src/examples/java/example.java: likewise
+	* src/examples/php/Makefile.am: likewise
+	* src/examples/php/example.php: likewise
+	* src/examples/python/Makefile.am: likewise
+	* src/examples/python/example.py: likewise
+
+2004-04-07  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/charencoder.c: (encode), (open_input_encoder),
+	(fix_encoding_name), (rlib_char_encoder_new),
+	(rlib_char_encoder_destroy), (rlib_char_encoder_set_buffer),
+	(rlib_char_encoder_encode), (rlib_char_encoder_get_name),
+	(rlib_char_encoder_isUTF8):
+		Add rlib_char_encoder to manage encodings.
+	* libsrc/charencoder.h:
+		Add rlib_char_encoder to manage encodings.
+
+2004-04-07  Chet Heilman  <cheilman@sicompos.com>
+	* bindings/php/php.c: (ZEND_FUNCTION):
+		Change name of function.
+	* libsrc/Makefile.am:
+		Add charencoder files to make.
+	* libsrc/api.c: (rlib_init_with_environment),
+	(rlib_get_content_type_as_text), (rlib_add_parameter),
+	(rlib_set_locale), (rlib_set_report_output_encoding),
+	(rlib_set_output_encoding), (rlib_set_pdf_font),
+	(rlib_set_database_encoding), (rlib_set_datasource_encoding),
+	(rlib_set_parameter_encoding), (rlib_set_encodings):
+		Changes for new encoder architecture.
+	* libsrc/datasource.c: (rlib_add_datasource),
+	(rlib_add_datasource_mysql_private), (rlib_add_datasource_postgre),
+	(rlib_add_datasource_odbc):
+		Changes for new encoder architecture. Resolve conflicts.
+	* libsrc/formatstring.c: (format_money):
+		Removed commented out junk.
+	* libsrc/free.c: (rlib_free):
+		Free the char_encoders.
+	* libsrc/html.c: (rlib_html_start_report):
+		Send the correct content type header with charset attribute.
+	* libsrc/parsexml.c: (parse_report_file):
+		Init char_encoders.
+	* libsrc/pcode.c: (rlib_var_get_string), (rlib_var_get_number),
+	(rlib_var_is), (rlib_var_factory_new),
+	(rlib_var_factory_alloc_new), (rlib_var_factory_get_small),
+	(rlib_var_factory_get), (rlib_var_factory_new_string),
+	(rlib_var_factory_new_number), (rlib_var_factory_new_datetime),
+	(rlib_var_factory_new_reference), (rlib_var_factory_new_iif),
+	(rlib_var_factory_free_value), (rlib_var_factory_destroy),
+	(rlib_var_stack_new), (rlib_var_stack_push), (rlib_var_stack_pop),
+	(rlib_var_stack_peek), (rlib_var_stack_destroy):
+		Added new functions to replace rlib_value - these are not yet used.
+	* libsrc/pdf.c: (rlib_pdf_get_string_width), (rlib_pdf_print_text),
+	(rlib_pdf_set_fg_color), (rlib_pdf_drawbox), (rlib_pdf_hr),
+	(rlib_pdf_boxurl_start), (rlib_pdf_drawimage),
+	(rlib_pdf_set_font_point), (rlib_pdf_start_new_page),
+	(rlib_pdf_set_working_page), (rlib_pdf_end_text),
+	(rlib_pdf_init_end_page), (rlib_pdf_init_output),
+	(rlib_pdf_begin_text), (rlib_pdf_finalize_private),
+	(rlib_pdf_spool_private), (rlib_pdf_end_page):
+		Fix locales so PDF is generated using correct locale.
+	* libsrc/reportgen.c: (encode_text), (make_report):
+		Change encoding functions.
+	* libsrc/resolution.c: (rlib_resolve_field_value),
+	(rlib_resolve_memory_variable):
+		Do encodings.
+	* libsrc/rlib.h:
+		for new encoding functions.
+	* libsrc/rlib_input.h:
+		for new encoding functions.
+	* libsrc/util.c: (make_utf8_locale), (make_all_locales_utf8),
+	(itox), (str2hex):
+		Util functions to support locales/charsets.
+
+2004-04-05  Bob Doan  <bdoan@sicompos.com>
+	* bindings/interfaces/Makefile.am: initial add
+
+2004-04-04  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: added interfaces for EXTRA_DIST
+	* bin/Makefile.am: moving
+	* bin/rlibc.c: gomoving
+	* bindings/Makefile.am: added interfaces for EXTRA_DIST
+	* bindings/java/java.c: small cleanups so it actually works
+	* bindings/php/php.c: added datasource decoder
+	* configure.in: 
+	* doc/basictraining.sgm: updated doc w/ paperType and interface decoder
+	* doc/capi.sgm: likewise
+	* doc/phpapi.sgm: likewise
+	* libsrc/api.c: datasource decoder && java support
+	* libsrc/datasource.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/util.c: likewise
+	* src/Makefile.am: moving
+	* src/rlibc.c: moving
+
+2004-03-25  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/pcode.c: (rlib_new_operand):
+		Change order of operand checks to stop calls to variable containers
+		when operand is a constant.
+	* libsrc/reportgen.c: (rlib_execute_as_int), (encode_text),
+	(align_text), (execute_pcodes_for_line):
+		Remove some debug code. Fix encode_text and add some additional
+		checking. General clean up and minor bug fixes. Plus more error
+		checking and logging.
+	* libsrc/resolution.c: (rlib_resolve_resultset_field):
+		Added error message for NULL resultset field and set error text.
+		
+2004-03-22  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: config.h support and paper types
+	* configure.in: likewise
+	* libsrc/api.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* libsrc/util.c: likewise
+
+2004-03-10  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/api.c:
+		Add / modify apis.
+	* libsrc/html.c:
+		Change charset in content type.
+	* libsrc/rlib.h:
+		Add prototypes.
+
+2004-03-10  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_init_with_environment):
+		Make the default pdf encoding be WinAnsiEncoding unless another is set
+		by the set_pdf_font function. to set NULL as the encoding (to use
+		the default encoding of the font, use "" as the encoding. Setting 
+		the encoding to NULL will cause NO CHANGE in the encoding.
+	* libsrc/html.c: (rlib_html_start_report):
+		Changed how the current output encoding is handled.
+	* libsrc/pdf.c: (rlib_pdf_set_font_point):
+		Changed the rules for setting the encoding as above.
+	* libsrc/reportgen.c: (encode_text), (rlib_output_text),
+	(rlib_output_text_text), (align_text), (make_report):
+		Fixed output conversions and align_text to properly differentiate
+		character length vs. byte length of utf8 strings.
+	* libsrc/rlib.h:
+		Made charcount refer to the proper utf8 function.
+
+2004-03-08  Chet Heilman  <cheilman@sicompos.com>
+	* bindings/php/php.c:
+		fix some bindings that were not correctly configured.
+	* bindings/php/environment.c: (rlib_php_resolve_memory_variable):
+		correct "warning: dereferencing type-punned pointer will break strict-aliasing rules"
+		in these modules.
+	* doc/capi.sgm:
+		Add rlib_set_locale function that was missing.
+	* doc/phpapi.sgm:
+		Add php documentation for new functions including set_locale.
+	* libsrc/datasource.c: (rlib_add_datasource_mysql_private),
+	(rlib_add_datasource_postgre), (rlib_add_datasource_odbc):
+		correct "warning: dereferencing type-punned pointer will break strict-aliasing rules"
+		in these modules.
+
+2004-03-03  Chet Heilman  <cheilman@sicompos.com>
+	* doc/capi.sgm:
+
+2004-03-01  Chet Heilman  <cheilman@sicompos.com>
+	* Makefile.am:
+	Add a tgz of the interfaces to the dist because I can't get the below to work.
+
+2004-03-01  Chet Heilman  <cheilman@sicompos.com>
+	* .cvsignore:
+		Add more of the generated files to be ignored by CVS.
+		
+2004-02-27  Chet Heilman  <cheilman@sicompos.com>
+	* bindings/interfaces/SWIGTYPE_p_rlib.class:
+		Add java classes for binding to rlib.
+	* bindings/interfaces/SWIGTYPE_p_rlib.java: (SWIGTYPE_p_rlib),
+	(SWIGTYPE_p_rlib.SWIGTYPE_p_rlib), (SWIGTYPE_p_rlib.getCPtr):
+		same.
+	* bindings/interfaces/librlib.class:
+		same.
+	* bindings/interfaces/librlib.java: (librlib), (librlib.rlib_init),
+	(librlib.rlib_add_datasource_mysql),
+	(librlib.rlib_add_datasource_postgre), (librlib.rlib_add_query_as),
+	(librlib.rlib_add_report), (librlib.rlib_execute),
+	(librlib.rlib_set_output_format_from_text), (librlib.rlib_spool),
+	(librlib.rlib_free), (librlib.rlib_get_output),
+	(librlib.rlib_get_output_length), (librlib.rlib_mysql_report),
+	(librlib.rlib_postgre_report), (librlib.rlib_add_datasource_odbc),
+	(librlib.rlib_add_resultset_follower),
+	(librlib.rlib_add_parameter), (librlib.rlib_version),
+	(librlib.rlib_set_output_encoding),
+	(librlib.rlib_set_report_output_encoding),
+	(librlib.rlib_set_pdf_font),
+	(librlib.rlib_set_pdf_font_directories):
+		same.
+	* bindings/interfaces/librlib.pm:
+		Add binding interface for perl.
+	* bindings/interfaces/librlib.py:
+		Add binding interface for python.
+	* bindings/interfaces/librlibJNI.class:
+		Add java classes for binding to rlib.
+	* bindings/java/java.c: (SWIG_JavaThrowException):
+		Add java classes for binding to rlib.
+	* bindings/perl/perl.c:
+		Add binding interface for perl.
+	* bindings/php/php.c: (ZEND_FUNCTION):
+		New interface functions.
+	* bindings/python/python.c:
+		Update binding interface for python with new functions.
+	* configure.in:
+	* libsrc/api.c: (rlib_init_with_environment), (rlib_set_locale),
+	(rlib_set_report_output_encoding), (rlib_set_output_encoding),
+	(rlib_set_pdf_font_directories), (rlib_set_pdf_font):
+		Fixes to locale setting.
+	* libsrc/parsexml.c: (parse_report_file):
+		Change handling of Locales.
+	* libsrc/reportgen.c: (rlib_output_text), (get_encoder),
+	(make_report):
+		Change handling of Locales.
+	* libsrc/rlib.h:
+		Change handling of Locales.
+	* libsrc/rlib.i:
+		Add new functions for SWIG.
+
+2004-02-25  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/html.c: (rlib_html_start_report):
+		Use encoding_name to set charset type in content-type header.
+	* libsrc/reportgen.c: (make_report):
+		Make encoding effective for all output formats.
+	* libsrc/rlib.h:
+		Add field to hold encoding name.
+
+2004-02-25  Chet Heilman  <cheilman@sicompos.com>
+	* doc/basictraining.sgm:
+		Add brief explanation of DATE arithmetic.
+	* doc/book.sgm:
+		Add me to list of authors.
+	* doc/formating.sgm:
+		Add new format info.
+	* doc/symboltable.sgm:
+		Refine format() description.
+
+2004-02-24  Chet Heilman  <cheilman@sicompos.com>
+	* doc/symboltable.sgm:
+		Add new function definitions.
+		
+2004-02-24  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/formatstring.c: (format_money), (format_number),
+	(rlib_string_sprintf), (rlib_format_string):
+		Make some functions public.
+	* libsrc/pcode.c:
+		Add general format function.
+	* libsrc/pcode.h:
+		same.
+	* libsrc/pcode_op_functions.c: (rlib_datetime_time_as_long),
+	(rlib_datetime_set_time_from_long), (rlib_datetime_addto),
+	(rlib_pcode_operator_add), (rlib_pcode_operator_subtract),
+	(rlib_pcode_operator_gettimeinsecs),
+	(rlib_pcode_operator_settimeinsecs), (rlib_pcode_operator_format):
+		Bug fixes and add format function.
+	* libsrc/pdf.c: (rlib_pdf_set_font_point):
+		Move where iconv happens to rlib level.
+
+2004-02-23  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_set_pdf_conversion),
+	(rlib_set_output_encoder):
+		change function to be generic vs. PDF oriented
+	* libsrc/parsexml.c: (parse_report_file):
+		Fix references for above.
+	* libsrc/pcode.c:
+		same
+	* libsrc/pcode.h:
+		same
+	* libsrc/pcode_op_functions.c: (rlib_datetime_makesamedate),
+	(rlib_datetime_makesametime), (rlib_datetime_format_date),
+	(rlib_pcode_operator_chgdateof), (rlib_pcode_operator_chgtimeof):
+		Add new functions to manipulate only date or time parts of a
+		datetime.
+	* libsrc/pdf.c: (rlib_pdf_get_string_width), (rlib_pdf_print_text):
+		move output encoding to rlib vs pdf driver.
+	* libsrc/reportgen.c: (rlib_output_text), (make_report):
+		same.
+	* libsrc/rlib.h:
+		Changes needed for above other changes.
+
+2004-02-23  Chet Heilman  <cheilman@sicompos.com>
+	* doc/formating.sgm:
+		Documentation for new formatting codes.
+	* doc/symboltable.sgm:
+		Add new functions for data/time manipulation.
+
+2004-02-23  Chet Heilman  <cheilman@sicompos.com>
+
+	* libsrc/api.c: (rlib_execute), (rlib_set_locale),
+	(rlib_set_pdf_conversion), (rlib_version):
+		Added new interface functions for setting report locale.
+	* libsrc/formatstring.c: (rlib_format_string):
+		added new 'locale' friendly formatters for handling numbers,
+		money and dates.
+	* libsrc/parsexml.c: (safestrncpy), (parse_line_array),
+	(parse_report_file):
+	
+	* libsrc/pcode.c: (rlib_str_to_long_long), (rvalcmp),
+	(rlib_new_operand), (rlib_value_new), (rlib_value_new_date):
+		changed the format of Date/time variables to allow it to handle
+		a greater range of dates. Now accepts 1/1/1 through 1/1/8000 or so.
+		It uses the GLIB GDate 'class'.
+		Fixed date arithmetic and added ability to subtract 2 dates.
+		Added dateof and timeof functions to address only the date or time
+		portion of the date time variable.
+	* libsrc/pcode.h:
+		Same as above.
+	* libsrc/pcode_op_functions.c: (rlib_datetime_valid_date),
+	(rlib_datetime_valid_time), (rlib_datetime_clear_time),
+	(rlib_datetime_clear_date), (rlib_datetime_clear),
+	(rlib_datetime_compare), (rlib_datetime_set_date),
+	(rlib_datetime_set_time), (rlib_datetime_format_date),
+	(rlib_datetime_format_time), (split_tdformat),
+	(rlib_datetime_format), (rlib_datetime_daysdiff),
+	(rlib_datetime_secsdiff), (rlib_pcode_operator_add),
+	(rlib_pcode_operator_subtract), (rlib_pcode_operator_lte),
+	(rlib_pcode_operator_lt), (rlib_pcode_operator_gte),
+	(rlib_pcode_operator_gt), (rlib_pcode_operator_eql),
+	(rlib_pcode_operator_noteql), (rlib_pcode_operator_stod_common),
+	(rlib_pcode_operator_dtos_common), (rlib_pcode_operator_dateof),
+	(rlib_pcode_operator_timeof), (rlib_pcode_operator_year),
+	(rlib_pcode_operator_month), (rlib_pcode_operator_day),
+	(rlib_pcode_operator_upper), (rlib_pcode_operator_lower),
+	(rlib_pcode_operator_left), (rlib_pcode_operator_right),
+	(rlib_pcode_operator_substring), (rlib_pcode_operator_proper),
+	(rlib_pcode_operator_stods), (rlib_pcode_operator_dim),
+	(rlib_pcode_operator_wiy), (rlib_pcode_operator_wiyo),
+	(rlib_pcode_operator_date):
+		Same as above. Plus all code has been upgraded so that it can 
+		process UTF8 encoded strings. All input from the xml parser is
+		UTF8. Input from the datasource and all other input data should
+		be in UTF8 encoding. To use non-UTF8 datasources, we would need
+		an input encoding filter (which we don't currently have).
+	* libsrc/pdf.c: (rlib_pdf_get_string_width), (rlib_pdf_print_text),
+	(rlib_pdf_set_font_point), (rlib_pdf_init_output):
+		Added functions to change font and set encodings.
+		Changed output functions so that they will re-encode to any
+		valid output encoding.
+		Also added code for direct output of UTF8, but it doesn't work.
+		I think this is at least partly due to CPDF not fully supporting
+		UTF8.
+	* libsrc/reportgen.c: (align_text), (execute_pcodes_for_line),
+	(wrap_memo_lines), (rlib_fetch_first_rows), (make_report):
+		Changed functions necessary for handling UTF8
+	* libsrc/resolution.c: (rlib_resolve_rlib_variable),
+	(rlib_resolve_resultset_field), (rlib_resolve_variable),
+	(rlib_resolve_memory_variable):
+		UTF8 handling.
+	* libsrc/rlib.h:
+		Added new function prototypes and changed some of the structs.
+	* libsrc/util.c: (r_error), (r_info), (r_debug), (r_warning),
+	(parsecolor), (stod), (daysinmonth), (encode):
+		Added new logging functions. These are currently identical to 
+		rlogit, but they will eventually be enableable/disableable, etc.
+		Change date/time handling to use new datetime.
+
+2004-02-17  H. Steuer <steuer@unixsystems.de>
+	reviewed by: <bdoan@sicompos.com>
+	* inputs/mysql/mysql.c: mysql_options() command does not always initialize the options struct by call, 
+		but attaches the group to the mysql struct. therefore the values in the options struct is available 
+		AFTER the mysql_real_connect().The version below looks somewhat more unclean but works as intended 
+		with 3.x and 4.x versions of mysql.
+
+2004-02-17  Bob Doan  <bdoan@sicompos.com>
+	* autogen.sh: removed some commented out stuff
+	* configure.in: bumped version, added "warningfun", hack around java check problem
+	* bindings/php/php.c: added alternate sections, and no data. fixed some crashes w/ no data
+	* inputs/mysql/mysql.c: likewise
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+
+2004-02-13  Chet Heilman  <cheilman@sicompos.com>
+	Add some changes for L10n. More to come.
+	* libsrc/api.c: (rlib_init_with_environment), (rlib_set_locale),
+	(rlib_set_pdf_font_directories), (rlib_set_pdf_font):
+		removed initial set of locale to en_US. Added functions to
+		set the pdf font parameters
+	* libsrc/formatstring.c: (format_money), (format_number),
+	(rlib_number_sprintf), (rlib_format_string):
+		Added new functions for localized formatting of money, numbers and 
+		dates. These use a "!$", "!#", or "!@" to precede a format for
+		strfmon, sprintf or strftime.
+	* libsrc/html.c: (rlib_html_start_report):
+		Added a meta tag to the html so that the content type uses the
+		utf8 charset.
+	* libsrc/pcode.c: Added dateof and timeof functions.
+	* libsrc/pcode.h: Added opcodes, etc. for above.
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_add),
+	(rlib_pcode_operator_subtract), (rlib_pcode_operator_lte),
+	(rlib_pcode_operator_lt), (rlib_pcode_operator_gte),
+	(rlib_pcode_operator_gt), (rlib_pcode_operator_eql),
+	(rlib_pcode_operator_noteql): Corrected handling of date arithmetic 
+		and comparison.
+	* libsrc/pdf.c: (rlib_pdf_set_font_point): Added ability to use a 
+		different font / encoding, etc.
+	* libsrc/rlib.h: Added fields to hold font / encoding, etc.
+	* libsrc/util.c: (local_rlogit): Changed fprintf to fputs so that
+		% chars are not mis-interpreted in logs.
+
+2004-02-02  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/pcode.c: (rlib_str_to_long_long): Fix problem in conversion
+	of negative numbers.
+
+2004-01-21  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: 1.1.7 release
+
+2004-01-21  Bob Doan  <bdoan@sicompos.com>
+	* AUTHORS: and cool people
+	* configure.in: check for iconv stuff.. nice patch from
+		H. Steuer <steuer@unixsystems.de>.. thanks dude
+	* libsrc/parsexml.c: handle new/old iconv stuff
+
+2004-01-20  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/pcode.c: Change name of 'substring' to 'mid'.
+
+2004-01-20  Chet Heilman  <cheilman@sicompos.com>
+	* doc/symboltable.sgm: Update documentation for new functions.
+
+2004-01-19  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_stod_common):
+	fix dtos function for times
+
+2004-01-16  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/pcode.c: add new functions tstod and dtosf
+	* libsrc/pcode.h:same
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_stod_common),
+	(rlib_pcode_operator_stod), (rlib_pcode_operator_tstod),
+	(rlib_pcode_operator_dtos_common):same
+
+2004-01-14  Chet Heilman  <cheilman@sicompos.com>
+	* libsrc/free.c: (rlib_free_report):
+	* libsrc/reportgen.c: (rlib_check_is_not_suppressed),
+	(rlib_process_variables): Fix some memory leaks.
+
+2004-01-14  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/reportgen.c: (rlib_check_is_not_suppressed): Fix
+	suppress so it will also work with 'old' string syntax.
+
+2004-01-13  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: php bug work around
+	* bindings/python/python.c: ability to use MySql groups (steuer@unixsystems.de)
+	* inputs/mysql/mysql.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/rlib.h: likewise
+
+2004-01-13  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/pcode.c: (rlib_operand_get_value): Fix memory allocation/
+	deallocation error.
+	* libsrc/resolution.c: (rlib_field_resolve_pcode),
+	(rlib_text_resolve_pcode): same
+
+2004-01-13  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/pcode.c: (rlib_new_operand), (rlib_infix_to_pcode): Made
+	all attributes into pcode functions.
+	* libsrc/pcode.h: same
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_add),
+	(rlib_pcode_operator_subtract), (rlib_pcode_operator_multiply),
+	(rlib_pcode_operator_divide), (rlib_pcode_operator_mod),
+	(rlib_pcode_operator_pow), (rlib_pcode_operator_lte),
+	(rlib_pcode_operator_lt), (rlib_pcode_operator_gte),
+	(rlib_pcode_operator_gt), (rlib_pcode_operator_eql),
+	(rlib_pcode_operator_noteql), (rlib_pcode_operator_and),
+	(rlib_pcode_operator_or), (rlib_pcode_operator_abs),
+	(rlib_pcode_operator_ceil), (rlib_pcode_operator_floor),
+	(rlib_pcode_operator_round), (rlib_pcode_operator_sin),
+	(rlib_pcode_operator_cos), (rlib_pcode_operator_ln),
+	(rlib_pcode_operator_exp), (rlib_pcode_operator_atan),
+	(rlib_pcode_operator_sqrt), (rlib_pcode_operator_fxpval),
+	(rlib_pcode_operator_val), (rlib_pcode_operator_str),
+	(rlib_pcode_operator_stod), (rlib_pcode_operator_iif),
+	(rlib_pcode_operator_dtos), (rlib_pcode_operator_year),
+	(rlib_pcode_operator_month), (rlib_pcode_operator_day),
+	(rlib_pcode_operator_upper), (rlib_pcode_operator_lower),
+	(rlib_pcode_operator_left), (rlib_pcode_operator_right),
+	(rlib_pcode_operator_substring), (rlib_pcode_operator_proper),
+	(rlib_pcode_operator_stods), (rlib_pcode_operator_isnull),
+	(rlib_pcode_operator_dim), (rlib_pcode_operator_wiy),
+	(rlib_pcode_operator_wiyo): same, plus added rlib_value_free
+	calls to cover existing or potential memory leaks, mostly when
+	invalid values are encountered.
+	* libsrc/reportgen.c: (rlib_execute_as_int),
+	(rlib_execute_as_boolean), (rlib_execute_as_int_inlist),
+	(execute_pcodes_for_line), (rlib_evaluate_report_attributes),
+	(rlib_evaluate_break_attributes), (make_report): pcode functions
+	* libsrc/resolution.c: (getspecial), (rlib_field_resolve_pcode),
+	(rlib_text_resolve_pcode), (rlib_resolve_fields): pcode functions.
+
+2004-01-13  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/containers.h:change all f() to f(void)
+	* libsrc/rlib.h:change all f() to f(void)
+
+2004-01-09  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/free.c: (rlib_hr_free_pcode), (rlib_text_free_pcode),
+	(rlib_field_free_pcode), (rlib_free_fields):
+	Put back changes that were temp. patched out because they were
+	freeing uninitialized variables.
+	* libsrc/parsexml.c: (parse_line_array), (parse_report_output),
+	(parse_break_field), (parse_report_break), (parse_report_variable),
+	(parse_report_file):
+	Allocate main objects using g_new0 instead of g_malloc to make sure
+	that all variables in the struct are properly inited to 0.
+
+2004-01-09  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/free.c:
+	Add a cvs Id tag.
+	
+2004-01-09  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/formatstring.c: (rlib_number_sprintf):
+	Changed all PERCISIONs to PRECISIONs.
+	* libsrc/free.c: (rlib_hr_free_pcode), (rlib_text_free_pcode),
+	(rlib_field_free_pcode), (rlib_free_fields), (rlib_free_report):
+	Free code, if any, in all newly added attribute code variables.
+	* libsrc/pcode.c: (rlib_str_to_long_long),
+	(rlib_operand_get_value):
+	Changed all PERCISIONs to PRECISIONs.
+	* libsrc/pcode.h:
+	Changed all PERCISIONs to PRECISIONs.
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_pow),
+	(rlib_pcode_operator_lte), (rlib_pcode_operator_lt),
+	(rlib_pcode_operator_gte), (rlib_pcode_operator_gt),
+	(rlib_pcode_operator_eql), (rlib_pcode_operator_noteql),
+	(rlib_pcode_operator_and), (rlib_pcode_operator_or),
+	(rlib_pcode_operator_ceil), (rlib_pcode_operator_floor),
+	(rlib_pcode_operator_round), (rlib_pcode_operator_sin),
+	(rlib_pcode_operator_cos), (rlib_pcode_operator_ln),
+	(rlib_pcode_operator_exp), (rlib_pcode_operator_atan),
+	(rlib_pcode_operator_sqrt), (rlib_pcode_operator_fxpval):
+	Changed all PERCISIONs to PRECISIONs.
+	* libsrc/reportgen.c: (rlib_check_is_not_suppressed),
+	(rlib_process_variables):
+	Changed all PERCISIONs to PRECISIONs.
+	* libsrc/rlib.h:
+	Changed all PERCISIONs to PRECISIONs.
+	Added variables to structs to hold code for all attributes.
+
+2004-01-08  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/resolution.c: (is_true_str), (rlib_resolve_fields):
+	fixup constant usages of yes/no so they behave as though they 
+	are expressions. Some slight code tightening.
+
+2004-01-08  Chet Heilman <cheilman@sicompos.com>
+
+	* libsrc/pcode.c: (rlib_new_operand), (rlib_operand_get_value):
+	Added constants, true, false, yes, no. 
+	Added ability to have string values in Variables.
+	Changed suppress to use a BOOLEAN value (0, not 0) instead of the 
+	strings 'yes' and 'no'.
+	* libsrc/reportgen.c: (rlib_check_is_not_suppressed),
+	(rlib_process_variables): Same.
+
+2004-01-07  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_dump_profile_stdout), (rlib_dump_profile): 
+	Incorporate changes from Heri Steuer. dropped the_fp variation and
+	added a _stdout one. Made some other changes and cleanup in the
+	rlib_dump_profile function.
+	* libsrc/parsexml.c: (utf8_to_8813), (ignoreElement),
+	(parse_line_array), (parse_report_output), (parse_report_outputs),
+	(parse_break_field), (parse_report_break), (parse_report_breaks),
+	(parse_detail), (parse_report_variables), (parse_report_file):
+	Added code to ignore "text" and "include" elements in addition to
+	"comment" elements. Kluged a change re: iconv param 2 until I find
+	the proper way to do it (Heri Steuer patch).
+
+2004-01-07  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/reportgen.c: process variables before report header/ 1st page header
+
+2004-01-06  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: require libxml 2.6.0 for xinclude stuff chet added
+	* doc/basictraining.sgm: changed "text" to "literal" because libxml puts "text" it all over the place.. this might piss people off
+	* doc/examples.sgm: likewise
+	* doc/formating.sgm: likewise
+	* libsrc/free.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+	* rlib.dtd: likewise
+
+2004-01-05  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: stuff for saving/loading .rlib files
+	* libsrc/api.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/load.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/save.c: likewise
+
+2004-01-05  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/parsexml.c: (parse_report_file): Change parser function so it
+	works with XInclude. Also correct spelling: pagesAccross corrected to
+	pagesAcross.
+	* rlib.dtd: Add missing attributes to DTD.
+
+2004-01-02  Chet Heilman <cheilman@sicompos.com>
+	* rlib.dtd: Add first draft of a DTD.
+
+2003-12-31  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_dump_profile_fp), (rlib_dump_profile): Fix
+	memory profiling functions.
+
+2003-12-31  Bob Doan  <bdoan@sicompos.com>
+	* bin/rlibc.c: hook it up to save
+	* inputs/mysql/mysql.c: use g* not r* for memory
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/parsexml.c: 
+	* libsrc/rlib.h: 
+	* libsrc/save.c: ability to save a XML file as a .rlib
+
+2003-12-31  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_dump_profile_fp), (rlib_dump_profile): Tweak and
+	new function.
+	* libsrc/containers.c: (rlib_hashtable_new_copyboth),
+	(rlib_hashtable_new), (rlib_hashtable_destroy),
+	(rlib_hashtable_insert), (rlib_hashtable_lookup),
+	(rlib_hashtable_dupskey), (rlib_hashtable_dupsval): Add module
+	* libsrc/containers.h: add module
+
+2003-12-31  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/Makefile.am: Add containers.h to install.
+	* libsrc/api.c: (rlib_init_profiler), (rlib_dump_profile): Move functions
+	for memory profiling out of ralloc into main api.
+	* libsrc/rlib.h: add profiling prototypes.
+
+2003-12-31  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/Makefile.am: Add containers.h and containers.c
+	* libsrc/api.c: (rlib_add_parameter): Use rlib_hashtable instead of
+	GHashTable.
+	* libsrc/free.c: (rlib_free): same
+	* libsrc/resolution.c: (rlib_resolve_memory_variable): same
+	* libsrc/rlib.h: same
+
+2003-12-31  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_init_with_environment): Change all ralloc
+	module references to equivalent glib functions.
+	* libsrc/csv.c: (rlib_csv_free), (rlib_csv_new_output_filter):
+	* libsrc/datasource.c:
+	* libsrc/environment.c: (rlib_c_free), (rlib_new_c_environment):
+	* libsrc/formatstring.c: (rlib_format_string):
+	* libsrc/free.c: (free_pcode), (rlib_image_free_pcode),
+	(rlib_hr_free_pcode), (rlib_text_free_pcode),
+	(rlib_field_free_pcode), (rlib_free_fields), (rlib_free_output),
+	(rlib_free_report), (rlib_free_tree), (rlib_free):
+	* libsrc/html.c: (rlib_html_start_report), (rlib_html_end_report),
+	(rlib_html_free), (rlib_html_new_output_filter):
+	* libsrc/navigation.c:
+	* libsrc/parsexml.c: (parse_line_array), (report_output_new),
+	(parse_report_output), (parse_break_field), (parse_report_break),
+	(parse_report_variable), (parse_report_file):
+	* libsrc/pcode.c: (rlib_new_operand), (rlib_infix_to_pcode),
+	(rlib_value_dup), (rlib_value_dup_contents), (rlib_value_free),
+	(rlib_value_new_string):
+	* libsrc/pcode_op_functions.c: (rlib_pcode_operator_add),
+	(rlib_pcode_operator_upper), (rlib_pcode_operator_lower),
+	(rlib_pcode_operator_proper):
+	* libsrc/pdf.c: (rlib_pdf_free), (rlib_pdf_new_output_filter):
+	* libsrc/ralloc.c:
+	* libsrc/ralloc.h:
+	* libsrc/reportgen.c: (execute_pcodes_for_line), (wrap_memo_lines),
+	(free_memo_lines), (print_report_output_private),
+	(rlib_init_variables):
+	* libsrc/resolution.c: (rlib_resolve_resultset_field),
+	(rlib_resolve_fields):
+	* libsrc/save.c:
+	* libsrc/txt.c: (rlib_txt_start_report), (rlib_txt_end_report),
+	(rlib_txt_free), (rlib_txt_new_output_filter):
+	* libsrc/util.c: (rlogit), (make_more_space_if_necessary):
+
+2003-12-30  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: added rlibc
+	* bin/Makefile.am: likewise
+	* bin/rlibc.c: likewise
+	* bindings/python/Makefile.am: removed environment.c
+	* bindings/python/environment.c: likewise
+	* configure.in: added rlibc
+	* inputs/odbc/odbc.c: merge cvs
+	* libsrc/Makefile.am: likewise
+	* libsrc/breaks.c:  free memory
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/save.c: new file for saving xml to flat file
+
+2003-12-30  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/Makefile.am: remove rhashtable and rvector
+	* libsrc/api.c: (rlib_add_parameter): use GHashTable
+	* libsrc/free.c: (ht_entry_free), (rlib_free): use GHashTable
+	* libsrc/parsexml.c: (parse_report_file): add XInclude processing
+	* libsrc/ralloc.c: (rmalloc), (rstrdup), (rcalloc), (rfree),
+	(rrealloc), (ralloc_init_profiler), (ralloc_profile): prep for removing
+	all of these functions except the profilers.
+	* libsrc/ralloc.h: same
+	* libsrc/reportgen.c: remove RVector 
+	* libsrc/resolution.c: (rlib_resolve_memory_variable): use GHashTable
+	* libsrc/rhashtable.c: deleted
+	* libsrc/rhashtable.h: same
+	* libsrc/rlib.h: use GHashTable
+	* libsrc/rvector.c: same
+	* libsrc/rvector.h: same
+
+2003-12-30  Bob Doan  <bdoan@sicompos.com>
+	* bindings/Makefile.am: add perl and java bindings
+	* bindings/java/Makefile.am: likewise
+	* bindings/java/java.c: likewise
+	* bindings/perl/Makefile.am: likewise
+	* bindings/perl/perl.c: likewise
+	* configure.in: check for perl, java, gmodule
+	* libsrc/datasource.c: use gmodule.. not dl*
+
+2003-12-29  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: use glib data types
+	* inputs/mysql/mysql.c: likewise
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/api.c: likewise
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/environment.c: likewise
+	* libsrc/formatstring.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/fxp.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/navigation.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/ralloc.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rhashtable.c: likewise
+	* libsrc/rhashtable.h:likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/rvector.c: likewise
+	* libsrc/rvector.h: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/util.c: likewise
+	
+2003-12-18  Chet Heilman <cheilman@sicompos.com>
+
+	* libsrc/breaks.c: (rlib_print_break_header_output): Change all 'surpress'
+	to 'suppress'.
+	* libsrc/parsexml.c: (parse_report_output), (parse_report_break),
+	(parse_report_file):ditto
+	* libsrc/reportgen.c: (rlib_check_is_not_suppressed),
+	(wrap_memo_lines), (free_memo_lines), (calc_memo_lines),
+	(print_report_output_private), (rlib_init_page): ditto, plus some coding
+	stype fixups.
+	* libsrc/resolution.c: (rlib_hr_resolve_pcode),
+	(rlib_resolve_fields2), (rlib_resolve_fields): 'surpress' to 'suppress'
+	* libsrc/rlib.h: 'surpress' to 'suppress'
+
+2003-12-15  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: bump
+	* inputs/postgre/postgre.c: crash fix
+	* libsrc/pcode.c: problems w/ == and iif fixed
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/resolution.c: likewise
+
+2003-12-12  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: getting ready for a new release
+
+2003-12-12  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/patch from Mario Teijeiro Otero <emeteo@escomposlinux.org>.. Correct automake stuff so we build on debian
+	* bindings/python/Makefile.am: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* tests/Makefile.am: likewise
+
+2003-12-12  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: better python stuff
+	* inputs/mysql/mysql.c: fix breaking
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/breaks.c: likewise
+	* libsrc/html.c: fix output problems
+	* libsrc/reportgen.c: likewise
+
+2003-12-10  Chet Heilman <cheilman@sicompos.com>
+
+	* configure.in: Add glib-2.0 pkg.
+
+2003-12-10  Chet Heilman <cheilman@sicompos.com>
+
+	* libsrc/free.c: (rlib_field_free_pcode): start changes for memo fields
+	* libsrc/parsexml.c: (parse_line_array): likewise
+	* libsrc/reportgen.c: (wrapMemoLines), (freeMemoLines),
+	(calcMemoLines), (get_output_size): likewise
+	* libsrc/resolution.c: (rlib_field_resolve_pcode): likewise
+	* libsrc/rlib.h: likewise
+
+2003-12-04  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: 1.1.6
+	* libsrc/fxp.c: gcc 3.3.2 compile fixes
+	* libsrc/reportgen.c: likewise
+	* libsrc/util.c: likewise
+
+2003-12-03  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: new news (1.1.5 released)
+	* libsrc/parsexml.c: surpress Hr's
+	* libsrc/pcode.h: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise 
+	* libsrc/rlib.h: likewise
+
+2003-12-03  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/parsexml.c: (parse_line_array), (parse_report_output),
+	(parse_report_outputs), (parse_break_field), (parse_report_break),
+	(parse_report_breaks), (parse_detail), (parse_report_variable),
+	(parse_report_variables), (parse_report_file): Handle comments by ignoring
+	them and log unexpected xml elements. 
+
+2003-12-03  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/api.c: (rlib_trap): A debugging aid for internal use only
+	* libsrc/pcode.c: (skip_next_closing_paren), (rlib_infix_to_pcode):
+	Corrected nested parenthesis parsing in iif statements.
+	* libsrc/rlib.h: added prototype for rlib_trap.
+
+2003-12-02  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/api.c: fix problem w/ pcode order of operations
+	* libsrc/parsexml.c:  likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+
+2003-12-01  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/html.c: fix crashing bug
+
+2003-12-01  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: new function rlib_set_locale
+	* inputs/postgre/postgre.c: possible bug w/ breaking fixed
+	* libsrc/api.c: new function rlib_set_locale
+	* libsrc/free.c:  fixed bug w/ page footer
+	* libsrc/navigation.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+
+2003-11-30  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: ability to turn off signal stuff, fix backwords stuff, bettwe pcode stuff
+	* libsrc/breaks.c: likewise 
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/util.c: likewise
+
+2003-11-26  Chet Heilman <cheilman@sicompos.com>
+	* libsrc/rlib.h: Added function to disable rlib signal handling and a
+		function to redirect rlogit logging messages.
+	* libsrc/util.c: (init_signals), (rutil_enableSignalHandler),
+	(local_rlogit), (rlogit_setmessagewriter), (rlogit):
+
+2003-11-21  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/breaks.c: breaks/csv was broken.. rlib variables were wrong
+	* libsrc/csv.c: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/pcode.c: major problems w/ rlib values.. fixed but hacked... leaking memory
+	* libsrc/reportgen.c: likewise
+
+2003-11-19  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: bump version to 1.1.5, fix odbc driver problems
+	* inputs/odbc/odbc.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode_op_functions.c:  likewise
+	* libsrc/resolution.c: likewise
+	* tests/test3.c: small compile fix
+
+2003-11-18  Bob Doan  <bdoan@sicompos.com>
+	* AUTHORS: added a heilman
+	* README: put more words in
+	* bindings/php/Makefile.am: Reports can now span pages accross, output cleanup, Chet cleanup, new compile error checking
+		and now .am's need RLIB_ stuff instead of listing all the stuff
+	* bindings/php/php.c: likewise
+	* bindings/python/Makefile.am: likewise
+	* bindings/python/environment.c: likewise
+	* bindings/python/python.c: likewise
+	* configure.in: likewise (and new --enable-memdebug)
+	* doc/basictraining.sgm: likewise
+	* doc/capi.sgm: likewise 
+	* doc/examples.sgm: likewise
+	* doc/phpapi.sgm: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/mysql/mysql.c: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/odbc/odbc.c: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/ralloc.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rhashtable.c: likewise
+	* libsrc/rhashtable.h: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rvector.c: likewise
+	* libsrc/txt.c: likewise
+	* rlib.pc.in: likewise
+	* tests/Makefile.am: likewise
+
+2003-11-18  Chet Heilman <cheilman@sicompos.com>
+	* bindings/php/php.c: (ZEND_FUNCTION): add binding for rlib_add_parameter
+	* libsrc/Makefile.am: Added files for RVector and RHashtable
+	* libsrc/api.c: (rlib_add_parameter): Adds memory parameters to the report.
+	* libsrc/phpapi.c: (rlib_add_parameter): Adds memory parameters to the report.
+	* libsrc/free.c: (rlib_free): Added allocation checking option
+	* libsrc/ralloc.c: (ralloc_getVector), (ralloc_getBadFrees),
+	(ralloc_init), (rmalloc), (rstrdup), (rcalloc), (rfree),
+	(rrealloc): Added option to trace memory allocation/free.
+	* libsrc/ralloc.h: 
+	* libsrc/resolution.c: (rlib_resolve_memory_variable):
+	* libsrc/rhashtable.c: (keycasecompare), (keycompare),
+	(RHashtable_free), (RHashtable_new), (RHashtable_put),
+	(RHashtable_get), (RHashtable_setCaseInsensitive),
+	(RHashtable_setStoreValues), (RHashtable_getDataRVector): A new module
+	to manage name/value pairs.
+	* libsrc/rhashtable.h: 
+	* libsrc/rlib.h: add rlib_add_parameter
+	* libsrc/rlib.i: add binding for rlib_add_parameter
+	* libsrc/rvector.c: (error), (comp), (RVector_newOpt),
+	(RVector_newSpecial), (RVector_new), (RVector_add), (RVector_free),
+	(isValidIdx), (RVector_get), (RVector_size),
+	(RVector_setCompareFunc), (RVector_sort), (RVector_bsearch),
+	(RVector_find), (RVector_isSorted), (RVector_deleteAt),
+	(RVector_getArray), (RVectorIterator_new),
+	(RVectorIterator_hasNext), (RVectorIterator_next),
+	(RVectorIterator_free): A new module to manage vectors (variable length
+	arrays). Used internally by RHashtable and to trace memory allocation/deallocation.
+	* libsrc/rvector.h:
+
+2003-11-17  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: new news (1.1.4 released)
+	* bindings/python/python.c: new bindings
+	* inputs/odbc/odbc.c: small compile problem
+	* libsrc/rlib.i:
+
+2003-11-16  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/php.c: ODBC support
+	* configure.in: likewise
+	* inputs/Makefile.am: likewise
+	* inputs/odbc/Makefile.am: likewise
+	* inputs/odbc/odbc.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* tests/Makefile.am: likewise
+
+2003-11-12  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/pcode_op_functions.c: fixed bug with string to date conversions
+	* libsrc/parsexml.c: new TODO
+
+2003-11-11  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/reportgen.c: new rlib_add_resultset_follower function so that there can be more then one main loop
+		query... new navigation functions to play follow the leader, and fixed bug w/ colors
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/breaks.c: likewise (new)
+	* libsrc/navigation.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* bindings/php/php.c: likewise
+
+2003-11-10  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: bump version to 1.1.4
+	* inputs/postgre/postgre.c: better connection checks
+	* libsrc/parsexml.c: utf8 problems fixed
+	* libsrc/reportgen.c: fixed bug w/ colors
+	* libsrc/txt.c: used precalculated length
+
+2003-11-08  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/rlib.h: convert libxml2 UTF-8 strings into 8859-1 strings so most western languages work in RLIB
+	* inputs/mysql/mysql.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/reportgen.c:  likewise
+	* libsrc/pdf.c: use WinAnsiEncoding instead of Courier.. for better western font support
+	* libsrc/rlib_input.h: ..
+	* bindings/php/rlib_php.h: move a #define around
+	* tests/test1.c: i even tested it
+
+2003-11-07  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: new news
+	* libsrc/api.c: only have easy api if configured for it
+	* doc/symboltable.sgm: new date() function
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+
+2003-11-05  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: better checks for cpdflib
+
+2003-11-05  Bob Doan  <bdoan@sicompos.com>
+	* autogen.sh: Fixed bug with pdf field caching, have pything bindings now, removed init.c, renamed to api.c
+		New functions from John Buckman <john@magnatune.com> to make rlib easier for scripting rlib_mysql_report
+		I also made new functions so that you can write the output buffer instead of spooling it.. and I updated some
+		documentaion... using auto* 1.6 now instead of 1.4 renamed input.h to rlib_input.h
+	* bindings/php/Makefile.am: likewise
+	* bindings/php/php.c: likewise
+	* bindings/python/Makefile.am: likewise
+	* bindings/python/python.c: likewise
+	* bindings/python/rlib_python.h: likewise
+	* doc/book.sgm: likewise
+	* doc/capi.sgm: likewise
+	* doc/examples.sgm: likewise
+	* doc/phpapi.sgm: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/mysql/mysql.c: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/api.c: likewise
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/init.c: likewise
+	* libsrc/input.h: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib.i: likewise
+	* libsrc/rlib_input.h: likewise
+	* libsrc/txt.c:  likewise
+	* libsrc/util.c: likewise
+	* tests/test1.c: likewise
+	* tests/test2.c: likewise
+	* tests/test3.c: likewise
+
+2003-11-04  Bob Doan  <bdoan@sicompos.com>
+	* autogen.sh: Add stuff for python bindings, speed up the engine a tad, better error checking
+	* bindings/Makefile.am: likewise
+	* bindings/php/php.c: likewise
+	* bindings/python/Makefile.am: likewise
+	* bindings/python/environment.c: likewise
+	* bindings/python/python.c: likewise
+	* bindings/python/rlib_python.h: likewise
+	* configure.in: likewise
+	* inputs/mysql/mysql.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/init.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+
+2003-10-24  Bob Doan  <bdoan@sicompos.com>
+	* NEWS: 1.1.2
+	* libsrc/reportgen.c: fix bug w/ output when caching
+	* libsrc/html.c: likewise
+	* libsrc/txt.c: likewise
+
+2003-10-24  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: Bump version to 1.1.2
+	* inputs/postgre/postgre.c: don't hardcode the query
+	* libsrc/reportgen.c: cash line output so only calling write_text only when necessary.. makes pdf reports 2-3x faster
+	* libsrc/csv.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/txt.c: likewise
+
+2003-10-23  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/Makefile.am: version numbers
+	* configure.in: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/csv.c: free more stuff
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/txt.c: likewise
+	* tests/Makefile.am: new test
+	* tests/test3.c: likewise
+
+2003-10-22  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: clean up configure so it REALLY tests for MYSQL, PHP, and POSTGRE correctly
+	* libsrc/Makefile.am: likewise
+	* tests/Makefile.am: likewise
+	* doc/Makefile: new doc for new api
+	* doc/api.sgm: likewise
+	* doc/book.sgm: likewise
+	* doc/capi.sgm: likewise
+	* doc/examples.sgm: likewise
+	* doc/phpapi.sgm: likewise
+
+2003-10-22  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: Split out mysql, postgre into a plugable INPUT api for RLIB.  Fixed a lot of bugs
+		in doing so.. also.. we have a postgre INPUT that works :)
+	* bindings/Makefile.am: likewise
+	* bindings/php/Makefile.am: likewise
+	* bindings/php/environment.c: likewise
+	* bindings/php/php.c: likewise
+	* inputs/Makefile.am: likewise
+	* inputs/mysql/Makefile.am: likewise
+	* inputs/mysql/mysql.c: likewise
+	* inputs/postgre/Makefile.am: likewise
+	* inputs/postgre/postgre.c: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/datasource.c:  likewise
+	* libsrc/free.c: likewise
+	* libsrc/init.c: likewise
+	* libsrc/mysql.c: likewise
+	* libsrc/postgre.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/rlib_php.h: likewise
+	* tests/Makefile.am: likewise
+	* tests/test1.c: likewise
+	* tests/test2.c: likewise
+	* configure.in: can now configure with out php, mysql, and postgre
+
+2003-10-20  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: Added posgre in/ split datasource out a bit more, 
+		also new c bindings in rlib core
+	* bindings/php/Makefile.am: likewise
+	* bindings/php/php.c: likewise
+	* configure.in: likewise
+	* libsrc/Makefile.am: likewise
+	* libsrc/datasource.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/fxp.c: likewise
+	* libsrc/init.c: likewise
+	* libsrc/input.h: likewise
+	* libsrc/mysql.c: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pcode.h: likewise
+	* libsrc/pcode_op_functions.c: likewise
+	* libsrc/postgre.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/util.c: likewise
+	* rlib.pc.in: likewise
+	* tests/Makefile.am: likewise
+	* tests/test1.c: likewise
+	* tests/test2.c: likewise
+	* libsrc/breaks.c:  rework so that input is really plugable
+
+2003-10-16  Bob Doan  <bdoan@sicompos.com>
+	* configure.in: don't crash
+	* libsrc/Makefile.am: likewise
+	* libsrc/mysql.c: s/sql.c/mysql.c/g
+	* libsrc/pcode.c: don't crash
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/sql.c: gone
+
+2003-10-16  Bob Doan  <bdoan@sicompos.com>
+	* configure.in:	bump version number up to 1.1.1 so I don't forget later
+	* libsrc/Makefile.am: new INPUT (database) backend, plus.. clean up some warning w/ -Wall. 
+	* libsrc/breaks.c: likewise
+	* libsrc/csv.c: likewise
+	* libsrc/free.c: likewise
+	* libsrc/html.c: likewise
+	* libsrc/init.c: likewise
+	* libsrc/input.h: likewise
+	* libsrc/parsexml.c: likewise
+	* libsrc/pcode.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/reportgen.c: likewise
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/sql.c: likewise
+	* libsrc/txt.c: likewise
+
+2003-10-16  Bob Doan  <bdoan@sicompos.com>
+	* bindings/php/environment.c: add free method
+	* libsrc/environment.c: add free method
+	* libsrc/free.c: free lots more stuff
+	* libsrc/input.h: add free method
+	* libsrc/parsexml.c: add pointer in the right place
+	* libsrc/pcode.c: free more stuff
+	* libsrc/pcode.h: free more stuff
+	* libsrc/reportgen.c: free more stuff, new set_output_method
+	* libsrc/rlib.h: free more stuff
+	* libsrc/sql.c: free and close the connection
+	* tests/test1.c: use set output method
+
+2003-10-15  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/csv.c: new free method
+	* libsrc/free.c: free lots more stuff and don't crash
+	* libsrc/html.c: mew free method
+	* libsrc/parsexml.c: rename functions and make them static
+	* libsrc/pcode.c: cut down on malloc
+	* libsrc/pdf.c: new free method
+	* libsrc/rlib.h: new methods
+	* libsrc/sql.c: started to see what we have to do to free the result
+	* libsrc/txt.c: new free method
+
+2003-10-15  Bob Doan  <bdoan@sicompos.com>
+	* Makefile.am: include new directories
+	* bindings/Makefile.am: new make for bindings..
+	* bindings/php/Makefile.am: new php make file
+	* bindings/php/environment.c: new file for php environment.. writing, get global vars
+	* bindings/php/rlib_php.h: prototypes
+	* bindings/php/php.c: move logic out of php and into rlib core.. more php to bindings
+	* configure.in: clean it up a tad
+	* libsrc/Makefile.am: remove php stuff
+	* libsrc/Makefile.simple: gone.. I'm not gonna maintain 2 make methods
+	* libsrc/chopblock.c: gone.. this was stupid anyway
+	* libsrc/csv.c: use environment to spool
+	* libsrc/environment.c: new c environment object
+	* libsrc/formatstring.c: less mallocing
+	* libsrc/free.c: initial attempt at freeing stuff
+	* libsrc/html.c: spool using the environment
+	* libsrc/init.c: add execute method.. put more logic in rlib.. less in php
+	* libsrc/input.h: new free method
+	* libsrc/pcode.c: malloc less
+	* libsrc/pcode.h: malloc less
+	* libsrc/pcode_op_functions.c: malloc less
+	* libsrc/pdf.c: spoll using environment object
+	* libsrc/php.c: gone.. moved to bindings
+	* libsrc/ralloc.c: don't use php's e* funcs
+	* libsrc/reportgen.c: removed useless spool function
+	* libsrc/resolution.c: malloc less
+	* libsrc/rlib.h: malloc less.. new prototypes and stuff
+	* libsrc/sql.c: free methods
+	* libsrc/txt.c: use environment object to spool
+	* tests/Makefile.am: new
+	* tests/test1.c: our 1st c test program
+
+2003-10-14  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/Makefile.am: New api for getting at databases
+	Also took all important logic out of php.c and put init into rlib core
+	* libsrc/init.c: likewise
+	* libsrc/php.c: likewise
+	* libsrc/rlib.h: likewise
+	* libsrc/util.c: likewise
+	* libsrc/rlib_php.h: likewise
+
+2003-10-04  Bob Doan  <bdoan@sicompos.com>
+	* libsrc/csv.c: new init_page_report function needed for more accuare output
+	* libsrc/html.c: likewise
+	* libsrc/pdf.c: likewise
+	* libsrc/txt.c: likewise
+	* libsrc/reportgen.c: likewise, a little less mallocing going on
+	* libsrc/resolution.c: likewise
+	* libsrc/rlib.h: likewise

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE report >
+<Report fontSize="10" orientation="landscape" suppressPageHeaderFirstPage="yes">
+	<Alternate>
+		<NoData>
+			<Output>
+				<Line fontSize="12">
+					<literal>NO DATA</literal>
+				</Line>		
+			</Output>
+		</NoData>
+	</Alternate>
+
+	<PageHeader>
+		<Output>
+			<Line color="'white'" bgcolor="'black'">
+				<field value="'Wheeeeeeee'" width="122" align="left" col="4" memo="yes"/>
+			</Line>
+		</Output>
+	</PageHeader>
+
+	<ReportHeader>
+		<Output>
+			<Line fontSize="11">
+				<field value="2" format="'%02.03d'" width="10"/>
+				<literal>Test Report (Normal) AND THE REPORT FORMAT IS: </literal>
+				<field value="r.format" width="10"/>
+			</Line>
+			<HorizontalLine size="4" bgcolor="'white'"/>
+		</Output>
+	</ReportHeader>		
+
+	<Detail>
+		<FieldHeaders>
+			<Output>
+				<HorizontalLine size="1" bgcolor="'black'"/>
+				<Line bgcolor="'0xe5e5e5'">
+					<literal width="20" col="1">test1</literal>
+					<literal width="1"/>
+					<literal width="40" col="2">test2</literal>
+					<literal width="1"/>
+					<literal width="60" col="3">longline</literal>
+				</Line>
+				<HorizontalLine size="4" bgcolor="'white'"/>
+			</Output>
+		</FieldHeaders>		
+		<FieldDetails>
+			<Output>
+				<Line bgcolor="iif(r.detailcnt%2,'0xe5e5e5','white')">
+					<field value="test1" width="20" align="left" col="1"/>
+					<literal width="1"/>
+					<field value="test2" width="40" align="center" col="2" memo="yes" bgcolor="iif(val(constitution)==1,'red', iif(val(constitution)==2,'aqua', 'white'))" />
+					<literal width="1"/>
+					<field value="longline" width="60" align="right" col="3" memo="yes" bgcolor="iif(val(constitution)==1,'yellow', iif(val(constitution)==2,'green', 'white'))"/>
+				</Line>
+				<Line bgcolor="'bobkratz'">
+					<field value="longline" width="122" align="left" col="4" memo="yes"/>
+				</Line>
+			</Output>
+		</FieldDetails>
+	</Detail>
+	<PageFooter>
+		<Output>
+			<Line>
+				<literal>Page: </literal>	
+				<field value="r.pageno" width="3" align="right"/>
+			</Line>
+		</Output>
+	</PageFooter>
+
+	<ReportFooter>
+	</ReportFooter>
+</Report>

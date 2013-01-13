@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE report >
+<Report fontSize="9" orientation="landscape">
+	<Alternate>
+		<NoData>
+			<Output>
+				<Line fontSize="12">
+					<literal>NO DATA</literal>
+				</Line>		
+			</Output>
+		</NoData>
+	</Alternate>
+	<ReportHeader>
+		<Output>
+			<Line fontSize="11">
+				<literal>ÁRVÍZTŰRŐ TÜKÖRFÚRÓGÉP</literal>
+			</Line>
+			<Line fontSize="11">
+				<literal>árvíztűrő tükörfúrógép</literal>
+			</Line>
+			<HorizontalLine size="4" bgcolor="'white'"/>
+		</Output>
+	</ReportHeader>		
+
+	<PageFooter>
+		<Output>
+			<Line>
+				<literal>Page: </literal>	
+				<field value="r.pageno" width="3" align="right"/>
+			</Line>
+		</Output>
+	</PageFooter>
+
+	<ReportFooter>
+	</ReportFooter>
+</Report>

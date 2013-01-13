@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE report >
+<Report fontSize="9" orientation="landscape">
+	<Alternate>
+		<NoData>
+			<Output>
+				<Line fontSize="12">
+					<literal>NO DATA???</literal>
+				</Line>		
+			</Output>
+		</NoData>
+	</Alternate>
+	<ReportHeader>
+		<Output>
+			<Line>
+				<literal>SHOULD GET: HI)                 GOT: </literal>
+				<field value="iif(0,')', 'HI)')" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: )                   GOT: </literal>
+				<field value="iif(1,')', 'HI)')" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 15                  GOT: </literal>
+				<field value="1+2+3+4+5" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 9                   GOT: </literal>
+				<field value="(1+2)*(1+2)" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 7                   GOT: </literal>
+				<field value="1+2*3" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 50                  GOT: </literal>
+				<field value="1/2*100" width="10"/>
+			</Line>			
+			<Line>
+				<literal>SHOULD GET: 5                   GOT: </literal>
+				<field value="100/2/10" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: bacon and eggs      GOT: </literal>
+				<field value="'bacon' + ' and ' + 'eggs'" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 6                   GOT: </literal>
+				<field value="1+2+val('3')" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: four                GOT: </literal>
+				<field value="iif(val('4')==4, 'four', 'bad')" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: true                GOT: </literal>
+				<field value="iif(3 &lt; 4, iif(1 != 2, 'true', 'false'), 'false')" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 2                   GOT: </literal>
+				<field value="iif(.2*10 == 2,'2','bad')"  width="20"/>
+			</Line>
+			<Line >
+				<literal>SHOULD GET: WORKS               GOT: </literal>
+				<field value="iif( 2 &gt; 1 || 0 == 0,'WORKS','DONT WORKS)" width="20" /> 
+			</Line>
+			<Line>
+				<literal>SHOULD GET: WORKS               GOT: </literal>
+				<field value="iif( 2 &gt; 1 || 0 == 2 &amp;&amp; 5 == 5 &amp;&amp; 7 &lt; 8,'WORKS','DONT WORKS)" width="20" /> 
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 2                   GOT: </literal>
+				<field value="(6+5) - (4+3+2)" width="10"/>
+			</Line>			
+			<Line>
+				<literal>SHOULD GET: 1                   GOT: </literal>
+				<field value="(6+5) - ((4+3)+2+1)" width="10"/>
+			</Line>			
+			<Line>
+				<literal>SHOULD GET: 1                   GOT: </literal>
+				<field value="(6+5) - (4+3+2+1)" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 12.345,00           GOT:</literal>
+				<field value="12345" format="'!$ %n'" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 9876,54             GOT:</literal>
+				<field value="9876.54" format="'!# %.2f'" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 9.876,54            GOT:</literal>
+				<field value="format(9876.54, '!$ %n')"  width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 9.876,54            GOT:</literal>
+				<field value="format(9876.54, '!$ %n')"  width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: XX N/A              GOT: </literal>
+				<field value="'XX '+iif(m.Alloc_Cnt == '-1', 'N/A', m.Alloc_Cnt)"  width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: FOO1                GOT: </literal>
+				<field value="1" format="'FOO%d'" width="10"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 0,0098              GOT: </literal>
+				<field value="fxpval('987000',8)" format="'%.4d'" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 1,23                GOT: </literal>
+				<field value="fxpval('123',2)" format="'%.2d'" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 200.00              GOT: </literal>
+				<field value="str(val('10')/val('5')*100.0,3,2)" format="'%s'" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: 200,00              GOT: </literal>
+				<field value="val(str(val('10')/val('5')*100.0,3,2))" format="'%.02d'" width="20"/>
+			</Line>
+			<Line>
+				<literal>SHOULD GET: blue                GOT: </literal>
+				<field value="iif(color!='[0] Undefined',color,'')" width="20"/>
+			</Line>
+		</Output>
+	</ReportHeader>		
+</Report>
